@@ -19,5 +19,7 @@ button,.save,.add{box-shadow:0 4px 9px rgba(9,43,87,.12)}
 .save,.add{background:linear-gradient(135deg,#f2cf5a,#dca62f)!important;color:#102c5b!important}
 input,select{border-color:#b9d5e8!important;background:#fffef9!important}input:focus,select:focus{outline:3px solid rgba(94,194,220,.25);border-color:#38a9c5!important}
 .source{color:#64748b!important}
+/* Main screen sixth card is My Schedule. */
 .grid .card:nth-child(6) .icon{font-size:0}.grid .card:nth-child(6) .icon:after{content:'🗓️';font-size:22px}.grid .card:nth-child(6) h3,.grid .card:nth-child(6) p{font-size:0}.grid .card:nth-child(6) h3:after{content:'내 일정';font-size:16px}.grid .card:nth-child(6) p:after{content:'항해 일자별 스케줄을 직접 계획하고 저장';font-size:12px;line-height:1.45;color:#64738d}
 @media (min-width:560px){.app,.page{border-radius:0 0 24px 24px;overflow:hidden}}
+/* refreshed 2026-07-19 */
