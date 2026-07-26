@@ -11,12 +11,127 @@ const breakfastGroups=[['From the Breakfast Pantry (브렉퍼스트 팬트리)',
 const lunchGroups=[['Small Plates (에피타이저)',[['Steamed Chicken Siu Mai Dumplings','치킨 슈마이','Tobiko, Steamed Greens, Ginger-Garlic Sauce','날치알과 찐 채소, 생강·마늘 소스를 곁들인 광둥식 딤섬입니다. 얇은 피에 다진 닭고기를 채우고 윗부분을 열어 둔 채 쪄낸 만두입니다.'],['Sliced Serrano Ham','슬라이스 세라노 햄','Manchego Cheese, Tomato Bread','스페인 시에라 지방에서 공기 건조한 돼지 뒷다리 햄을 얇게 썰어 만체고 치즈와 토마토 브레드를 곁들입니다.'],['Crisp Salmon Fish Cake','바삭한 연어 피시 케이크','Dill, Sweet Green Peas, Potato, Tomato Chutney','연어와 감자, 완두콩을 섞어 바삭하게 부친 영국식 피시 케이크로 딜과 토마토 처트니를 곁들입니다.'],['Pork and Shrimp Wonton Soup','돼지고기 새우 완탕 수프','Sesame, Bok Choy, Green Onions, Light Soy Sauce','돼지고기와 새우를 채운 완탕을 라이트 간장 베이스 국물에 끓이고 참깨, 청경채, 쪽파를 곁들입니다.'],['Roasted Cauliflower Soup','구운 콜리플라워 수프','Cumin Spice, Toasted Sesame Seeds','구운 콜리플라워로 만든 부드러운 수프에 큐민 향신료와 볶은 참깨를 더합니다.']]],['Salads (샐러드)',[['Crisp Romaine Leaf and Iceberg Salad','아삭한 로메인 & 아이스버그 샐러드','Tossed with Cherry Tomatoes, Sliced Red Onions, Cucumber, and Carrots, served with a choice of Grilled Chicken Breast or Grilled Salmon Fillet','로메인과 아이스버그 양상추에 체리 토마토, 적양파, 오이, 당근을 넣고 그릴 치킨 가슴살 또는 그릴 연어 필레 중 하나를 선택해 곁들입니다.'],['Ahi Tuna Nicoise','참치 니수아즈','Haricot Vert, Fingerling Potatoes, Nicoise Olives, Quail Eggs, Black Pepper, Dijon Mustard Dressing','프랑스 남부 니스 지방의 전통 샐러드로 아히 참치, 아리코 베르, 핑거링 감자, 니수아즈 올리브, 메추리알을 디종 머스터드 드레싱으로 버무립니다.']]],['Burgers (버거)',[['The Classic Burger','클래식 버거','Bar-grilled Angus Beef Burger on Toasted Brioche Bun with American Cheddar, Iceberg Lettuce, Tomatoes, and Red Onions served with French Fries and Coleslaw','구운 앵거스 소고기 패티를 브리오슈 번에 넣고 아메리칸 체다, 아이스버그 양상추, 토마토, 적양파를 더한 클래식 버거입니다. 프렌치프라이와 코울슬로가 곁들여집니다.'],['Black Bean Burger','검은콩 버거','Spiced Black Bean Patty on Toasted Potato Bun with Guacamole, Pepper Jack Cheese, Fajita Peppers and Onions, served with Sweet Potato Fries','향신료를 더한 검은콩 패티를 감자 번에 넣고 과카몰리, 페퍼잭 치즈, 파히타 피망과 양파를 더한 채식 버거입니다. 고구마튀김이 곁들여집니다.'],['The Impossible Cheeseburger','임파서블 치즈버거','Plant-based Burger on Toasted Brioche Bun with Cheddar Cheese, Iceberg Lettuce, Tomatoes and Red Onions served with French Fries and Roasted Garlic Aioli','식물성 임파서블 패티를 브리오슈 번에 넣고 체다 치즈, 아이스버그 양상추, 토마토, 적양파를 더한 버거입니다. 프렌치프라이와 로스트 갈릭 아이올리가 곁들여집니다.']]],['Chef’s Recommendations (셰프 추천)',[['Steak Frites','스테이크 프리트','Sirloin Steak, French Fries, Grilled Tomato, Tarragon-Herb Butter','서로인 스테이크에 감자튀김, 구운 토마토와 타라곤 허브 버터를 곁들인 프랑스식 메뉴입니다.'],['Triple Pork Fried Rice','트리플 포크 볶음밥','Long Grain Rice, Pork Belly, Barbecued Roast Pork, Chinese Sausage','삼겹살, 차슈, 중국식 소시지 세 가지 돼지고기를 장립종 쌀과 함께 볶은 메뉴입니다.'],['Baked Ziti Pasta','베이크드 지티 파스타','Provencal Sauce, Basil, Spinach, Chili, Parsley, Garlic, Ricotta Cheese','지티 파스타를 프로방살 토마토 허브 소스, 바질, 시금치, 마늘, 리코타 치즈와 섞어 오븐에 구운 미국식 이탈리안 요리입니다.'],['Hainanese Chicken Rice','하이난식 치킨 라이스','Sweet Dark Soy Sauce, Ginger-Garlic Sauce, Chili Sauce','닭을 삶은 육수로 지은 밥과 부드러운 닭고기를 진한 간장, 생강·마늘 소스, 칠리 소스와 함께 먹는 싱가포르 대표 요리입니다.']]],['Desserts (디저트)',[['Strawberry Mille-Feuille','딸기 밀푀유','Layers of Puff Pastry Crust, Vanilla Pastry Cream, Fresh Strawberries','퍼프 페이스트리와 바닐라 페이스트리 크림, 신선한 딸기를 겹겹이 쌓아 만든 프랑스식 디저트입니다.'],['Warm Apple-Cinnamon Crepe','따뜻한 사과 시나몬 크레페','Granny Smith Apples, Creme Patissiere, Caramel Sauce, Vanilla Ice Cream','새콤한 그래니 스미스 사과와 크렘 파티시에를 따뜻한 크레페에 감싸고 캐러멜 소스와 바닐라 아이스크림을 곁들입니다.'],['Italian-Style Ice Cream Sundae','이탈리안 스타일 아이스크림 선데','Hazelnut Gelato, Italian Biscotti, Chocolate Sauce, Whipped Cream','헤이즐넛 젤라토에 이탈리안 비스코티, 초콜릿 소스와 휘핑크림을 올린 선데입니다.']]],['No Sugar Added Desserts (무설탕 디저트)',[['Raspberry Creme Brulee','라즈베리 크림 브륄레','Fresh Berries, Black Sesame Seed Meringue','라즈베리를 더한 커스터드 위에 설탕을 캐러멜라이즈하고 신선한 베리와 흑임자 머랭을 곁들인 무설탕 디저트입니다.']]],['For Children of All Ages (어린이 메뉴)',[['Three Cheese Pizza','쓰리 치즈 피자','Mozzarella, Cheddar, Parmesan Cheese — Entrées served with a choice of Steamed Rice or French Fries and Fresh Vegetables','모짜렐라, 체다, 파마산 치즈를 올린 어린이용 피자로 흰밥 또는 감자튀김과 신선한 야채 중 선택할 수 있습니다.'],['Golden Chicken Strips','골든 치킨 스트립','With Barbecue Sauce — Entrées served with a choice of Steamed Rice or French Fries and Fresh Vegetables','닭가슴살에 빵가루를 입혀 튀긴 어린이용 치킨 스트립입니다. 바비큐 소스와 함께 흰밥 또는 감자튀김, 신선한 야채 중 선택할 수 있습니다.'],['Chocolate Chip Cookies','초콜릿 칩 쿠키','Vanilla and Chocolate Dipping Sauce','초콜릿 칩이 들어간 미국식 쿠키를 바닐라와 초콜릿 두 가지 디핑 소스에 찍어 먹는 어린이용 디저트입니다.'],['Grilled Beef Tenderloin','그릴드 비프 텐더로인','Smashed Potatoes, Green Beans, Shredded Carrots','소고기 안심을 그릴에 구운 어린이용 메뉴로 으깬 감자, 그린빈, 채 썬 당근이 곁들여집니다.'],['Fruit Cup','과일 컵','','신선한 과일을 먹기 좋은 크기로 담아 제공합니다.']]]];
 const pairAKids=[['Starters (에피타이저)',[['Roasted Creamy Tomato Soup','크리미한 토마토 수프','Creamy Tomato Soup with Toasted Garlic Crostini','부드럽고 고소한 크리미 토마토 수프에 바삭한 구운 마늘 크로스티니를 곁들입니다.'],['Sweet Corn and Edamame Salad','옥수수·에다마메 샐러드','Sweet Corn, Edamame, Baby Spinach','달콤한 옥수수와 고소한 에다마메를 신선한 어린 시금치와 함께 가볍게 버무린 샐러드입니다.']]],['Entrées (메인) — 사이드: 자스민 라이스 / 감자튀김 / 맥앤치즈 / 야채 선택',[['Chicken Pot Pie','치킨 팟 파이','Chicken, Potato, Carrot, Peas, Puff Pastry','닭고기와 감자, 당근, 완두콩을 크리미한 소스와 함께 담고 퍼프 페이스트리로 덮어 구운 미국식 파이입니다.'],['Panko Crusted Cod','판코 대구 튀김','Cod, Panko, Kewpie Tartar Sauce','담백한 대구살에 일본식 판코 빵가루를 입혀 바삭하게 튀기고 큐피 타르타르 소스를 곁들입니다.'],['Barbecue Chicken Pizza','바비큐 치킨 피자','Chicken, Barbecue Sauce, Cheese','달콤하고 짭짤한 바비큐 소스와 닭고기, 치즈를 올려 구운 어린이용 피자입니다.'],['Mini Cheeseburger','미니 치즈버거','Beef Patty, Cheese, Brioche Bun','부드러운 브리오슈 번 사이에 소고기 패티와 치즈를 넣은 작은 크기의 치즈버거입니다.']]],['Disney Check Meals (건강식)',[['Roasted Turkey Breast','로스트 칠면조 가슴살','Quinoa, Sweet Potato, Carrot Sticks; Apple Slices for Dessert','담백하게 구운 칠면조 가슴살에 퀴노아, 고구마, 당근 스틱을 곁들인 균형 잡힌 건강식입니다. 디저트로 사과 슬라이스가 제공됩니다.'],['Whole Wheat Penne Pasta','통밀 펜네 파스타','Tomato Sauce, Butternut Squash, Zucchini; Fruit for Dessert','통밀 펜네에 토마토 소스, 버터넛 스쿼시와 주키니를 더한 건강식입니다. 디저트로 과일이 제공됩니다.']]],['Desserts (디저트)',[['Showtime Cupcake','쇼타임 컵케이크','Vanilla Cupcake, Caramel Buttercream, Candy Popcorn Topping','바닐라 컵케이크 위에 카라멜 버터크림과 캔디드 팝콘 토핑을 올린 공연 테마 디저트입니다.'],['Selection of Assorted Ice Cream','아이스크림 선택','Assorted Flavors','여러 가지 맛의 아이스크림 가운데 원하는 맛을 선택할 수 있습니다.']]]];
 const pairAMain=[['Small Plates (에피타이저)',[['Sauteed Maitake Mushrooms','마이타케 버섯 볶음','Sesame Artichoke Puree, Baby Malabar Spinach, Mushroom Dashi, Citrus Vinaigrette','마이타케 버섯은 일본·동아시아에서 자생하는 깊은 감칠맛의 버섯입니다. 볶은 마이타케를 참깨 아티초크 퓌레 위에 올리고 어린 말라바 시금치, 버섯 다시, 시트러스 비네그레트를 곁들입니다.'],['Fennel, Bartlett Pear, Tatsoi Salad','펜넬·바틀렛 배·타초이 샐러드','Manchego Cheese, Candied Walnuts, Aged Sherry Dressing','향긋한 펜넬과 달콤한 바틀렛 배, 타초이를 조합하고 만체고 치즈와 설탕 코팅 호두, 숙성 셰리 드레싱을 더한 샐러드입니다.'],['Porcini-Spiced Ahi Tuna Sashimi 👍👍','포르치니 향신료를 곁들인 참치 사시미','Pickled Lotus Root, Oyster Mushroom, Black Sesame Brittle, Wasabi-Yuzu Mayonnaise','황다랑어 사시미에 이탈리아산 포르치니 버섯 가루를 입힌 메뉴입니다. 절인 연근, 느타리버섯, 검은깨 브리틀과 와사비 유자 마요네즈를 곁들입니다.'],['Duck Confit Pastilla','오리 콩피 파스틸라','Dates, Apricot, Ginger, Red Pepper, Saffron, Raspberry Sauce','오리 콩피를 대추야자, 살구, 생강, 홍피망, 사프란과 함께 얇은 반죽에 감싸 구운 모로코식 파이입니다. 라즈베리 소스를 곁들입니다.'],['Burrata Mozzarella Cheese and Prosciutto di Parma 👍','부라타 모짜렐라 치즈와 파르마 프로슈토','Crisp Cranberry and Sunflower Seed Phyllo, Charred Blood Orange','크리미한 부라타 모짜렐라와 파르마 프로슈토에 바삭한 크랜베리·해바라기씨 필로 페이스트리와 구운 블러드 오렌지를 곁들입니다.'],['Classic Iceberg Wedge','클래식 아이스버그 웨지 샐러드','Cherry Tomatoes, Red Onions, Smoked Bacon Lardons, Maytag Blue Cheese Dressing','아이스버그 양상추를 웨지 모양으로 큼직하게 썰고 체리 토마토, 적양파, 훈제 베이컨 큐브와 메이태그 블루치즈 드레싱을 곁들입니다.'],['Thai Shrimp Pumpkin Soup','태국식 새우 단호박 수프','Coconut Milk, Coriander, Lemon Grass','단호박 베이스에 코코넛 밀크와 레몬그라스, 고수를 넣고 새우를 더한 태국식 수프입니다.'],['Roasted Roma Tomato Soup','구운 로마 토마토 수프','Sourdough Purple Basil Crostini','로마 토마토를 구워 만든 수프에 퍼플 바질을 올린 사워도우 크로스티니를 곁들입니다.']]],['Bread Selection (브레드)',[['Mini Herb Brioche, Soft White, Whole Wheat Rolls','미니 허브 브리오슈, 소프트 화이트 롤, 통밀 롤','','허브 향의 미니 브리오슈와 부드러운 화이트 롤, 고소한 통밀 롤이 함께 제공됩니다.']]],['Entrées (메인)',[['Thai Boat Noodles 👍 (호불호 있음)','태국식 보트 누들','Rice Noodles, Shrimp, Chicken, Tamarind-Red Chili Pepper Sauce, Pickled Shallots, Eggs, Roasted Peanuts, Lime','방콕의 운하 보트 행상에서 유래한 태국 길거리 누들입니다. 쌀국수에 새우와 닭고기를 넣고 타마린드와 레드 칠리 소스로 맛을 내며 절인 샬롯, 달걀, 구운 땅콩과 라임을 곁들입니다.'],['Roasted Butternut Squash Risotto','구운 단호박 리조또','Sage, Leeks, Spinach, Toasted Hazelnuts','버터넛 스쿼시를 넣은 크리미한 리조또에 세이지, 리크, 시금치와 구운 헤이즐넛을 더합니다.'],['Chicken Tikka Masala 👍','치킨 티카 마살라','Jeera Rice, Kachumber, Raita, Paratha Flatbread','요거트와 향신료에 재운 닭고기를 토마토·크림 베이스 마살라 소스에 끓인 인도식 커리입니다. 지라 라이스, 카춤버 샐러드, 라이타와 파라타를 곁들입니다.'],['Cilantro-marinated Grouper Fillet','고수 마리네이드 그루퍼 필레','Turmeric Rice, Mango, Lime, Avocado, Red Onion, Black Bean Salsa','고수에 재운 그루퍼 필레를 구워 강황 라이스와 망고·라임·아보카도 살사를 곁들인 생선 요리입니다.'],['Moroccan-spiced Roasted Kabocha and Calabaza','모로코 스타일 단호박과 카라바자 구이','Zaalouk, Garbanzo, Cinnamon Brown Rice, Couscous, Cilantro, Arugula, Pita, Harissa Yogurt','두 종류의 단호박을 모로코 향신료로 구워 자알루크, 병아리콩, 시나몬 현미, 쿠스쿠스, 피타와 하리사 요거트를 곁들인 채식 메뉴입니다.'],['Peppered Filet Mignon 👍👍','통후추 필레 미뇽','Buttered Long Green Beans, Crushed Fingerling Potato Hash, Pink Pepper Cafe au Lait','소고기 안심에 통후추를 입혀 구운 스테이크로 버터에 볶은 그린빈, 핑거링 감자 해시와 핑크 페퍼 소스를 곁들입니다.'],['Pav Bhaji Slow-cooked Vegetable Curry','파브 바지 야채 커리','Turmeric, Ginger, Cumin, Coriander, Lemon, Jeera Rice, Raita, Soft Pav Buns','뭄바이 길거리 음식으로 여러 채소를 향신료와 함께 오래 끓인 커리입니다. 버터를 바른 파브 번에 곁들여 먹으며 지라 라이스와 라이타가 함께 나옵니다.'],['Dill-marinated Shrimp Salad','딜 마리네이드 새우 샐러드','Poached Shrimp, Dill, Diced Cucumber, Tomatoes, Egg, Purple Onion, Lemon-Olive Oil, Arugula Leaves','데친 새우를 딜에 마리네이드하고 오이, 토마토, 달걀, 적양파와 아루굴라 위에 올린 뒤 레몬 올리브오일 드레싱을 곁들입니다.'],['Hainanese Chicken Rice','하이난 치킨 라이스','Sweet Dark Soy Sauce, Ginger-Garlic Sauce, Chili Sauce','닭을 삶은 육수로 지은 향긋한 밥과 부드러운 닭고기에 진한 간장, 생강·마늘 소스, 칠리 소스를 곁들여 먹는 싱가포르 대표 요리입니다.'],['Banana Leaf Steamed Filet of Salmon','바나나 잎 연어 찜','Steamed White Rice, Bok Choy','연어 필레를 바나나 잎으로 감싸 쪄낸 동남아식 메뉴로 흰쌀밥과 청경채를 곁들입니다.']]],['Desserts (디저트)',[['Chocolate Molten Cake 👍👍','초콜릿 몰튼 케이크','Double Chocolate Sauce, Milk Chocolate Soil, Matcha Ice Cream','따뜻한 케이크 안에서 진한 초콜릿이 흘러나오는 디저트입니다. 더블 초콜릿 소스, 밀크 초콜릿 소일과 말차 아이스크림을 곁들입니다.'],['Ube Creme Brulee','우베 크림 브륄레','Coconut Biscotti','보랏빛 우베를 넣은 크림 브륄레 위에 설탕을 캐러멜라이즈하고 코코넛 비스코티를 곁들입니다.'],['Blueberry-Lemon Bavarian Cream','블루베리 레몬 바바리안 크림','Blueberry Compote, Lemon Rocks, Fresh Berries, Dried Raspberry Meringue','레몬 향의 부드러운 바바리안 크림에 블루베리 컴포트, 레몬 크럼블, 신선한 베리와 라즈베리 머랭을 곁들입니다.'],['Strawberry Shortcake Sundae 👍','딸기 쇼트케이크 선데','Vanilla Ice Cream, Strawberry Compote, Whipped Cream','바닐라 아이스크림에 딸기 컴포트와 휘핑크림을 올린 쇼트케이크 스타일 선데입니다.'],['Coconut-Tapioca Pudding','코코넛 타피오카 푸딩','Mango-Strawberry Mint Salsa','코코넛 밀크와 타피오카 펄로 만든 동남아식 푸딩에 망고·딸기·민트 살사를 곁들인 무설탕 디저트입니다.']]]];
+
+
+const pairBKids=[['Starters (에피타이저)',[
+['Creamed Potato Soup','크리미드 포테이토 수프','','당근과 셀러리가 들어간 부드러운 크림 감자 수프'],
+['Garden Salad','가든 샐러드','','신선한 믹스 그린, 채 썬 당근, 오이 슬라이스 샐러드 (드레싱 선택 가능)']
+]],['Entrées (메인) — 사이드: 자스민 라이스 / 프렌치 프라이 / 마카로니 & 치즈 + 야채 선택',[
+['Chicken Katsu','치킨 가츠','','오이 스틱, 코코넛 라이스, 돈가츠 소스와 함께 제공되는 치킨 가츠'],
+['Crisp Vegetable Spring Rolls','바삭한 야채 스프링롤','','바삭한 야채 스프링롤 + 호이신 디핑 소스'],
+['Hawaiian Barbecue Chicken Pizza','하와이안 바비큐 치킨 피자','','하와이안 스타일 BBQ 치킨 피자'],
+['Mini Cheeseburger','미니 치즈버거','','브리오슈 번에 제공되는 미니 치즈버거']
+]],['Disney Check Meals (건강식)',[
+['Grilled Chicken','그릴드 치킨','','그릴드 치킨 + 생강-파 볶음밥 + 청경채 찜 (디저트: 망고 사과)'],
+['Whole Wheat Spaghetti Pasta','통밀 스파게티 파스타','','통밀 스파게티 파스타 + 터키 미트볼 + 마리나라 소스 + 가든 샐러드 (디저트: 사과 슬라이스)']
+]],['Desserts (디저트)',[
+['Chocolate Dome','초콜릿 돔','','초콜릿 무스 + 딸기 컴포트 + 초콜릿 브라우니 조합'],
+['Selection of Assorted Ice Cream','아이스크림 선택','','다양한 아이스크림 선택 가능']
+]]];
+
+const pairBMain=[['Small Plates (에피타이저)',[
+['Korean Barbecue Beef Steamed Bao','한국식 바비큐 소고기 찐빵','Pickled Cucumber, Gochujang Hoisin Sauce','바오(包)는 발효 반죽을 쪄낸 중국식 찐빵입니다. 이 메뉴는 바오 사이에 한국식 양념의 바비큐 소고기와 오이 피클을 넣고, 고추장과 호이신 소스를 곁들인 구성입니다.'],
+['Rice Noodle Salad','쌀국수 샐러드','Daikon, Cucumber, Carrot, Snow Peas, Chili, Coriander, Sweet Onion, Rice Wine Vinegar, Agave-Lime Dressing','베트남식 차가운 쌀국수 샐러드입니다. 무·당근·꼬투리 완두 등 채소를 쌀국수와 함께 버무리고, 쌀식초와 아가베 라임 드레싱이 곁들여집니다.'],
+['Dragon Roll 👍','드래곤 롤','Spicy Tuna Roll, Freshwater Eel, Avocado, Unagi Sauce','드래곤 롤은 일본보다 미국 서양에서 발달한 마키 스시 변형으로, 위에 장어와 아보카도를 비늘처럼 올린 롤입니다. 매콤한 스파이시 튜나 롤 위에 장어와 아보카도를 올리고 우나기 소스를 끼얹은 구성입니다.'],
+['Chicken Satay 👍','치킨 사테','Coconut Rice, Cucumber, Kecap Manis, Roasted Peanut Dipping','사테는 꼬치에 꿰어 구운 인도네시아·말레이시아의 전통 요리입니다. 닭고기 사테에 코코넛 라이스, 케찹 마니스, 구운 땅콩 디핑 소스가 곁들여집니다.'],
+['Hearts of Palm','하츠 오브 팜 (야자심)','Cilantro and Lime, Cucumber, Purple Onion, Bell Pepper, Sweet Potato, Spiced Yellow Pepper, Citrus Dressing, Popcorn','하츠 오브 팜은 야자나무 줄기 안쪽의 부드러운 심 부분으로, 중남미 등남아 요리에 사용됩니다. 채소·고구마와 함께 시트러스 드레싱으로 버무리고 팝콘을 토핑한 샐러드입니다.'],
+['Romaine Heart Caesar Salad 👍👍','로메인 하트 시저 샐러드','Cherry Tomatoes, Parmigiano-Reggiano, Toasted Ciabatta Croutons, Caesar Dressing','시저 샐러드는 1924년 멕시코 티후아나의 셰프 시저 카르디니가 만든 것으로 알려진 클래식 샐러드입니다. 로메인 상추 안쪽 부드러운 부분, 파르미지아노 레지아노 치즈, 치아바타 크루통에 시저 드레싱을 곁들입니다.'],
+['Wonton Soup','완탕 수프','Soft Chicken Dumplings, Chicken Broth, Ginger, Napa Cabbage, Green Onions','완탕은 얇은 피로 빚은 광둥식 만두입니다. 닭 육수에 치킨 완탕, 생강, 배추, 쪽파를 넣은 따뜻한 국물 요리입니다.'],
+['Molokai Corn and Taro Chowder','몰로카이 옥수수와 타로 차우더','Cut Yellow Corn, Sliced Green Onions','차우더는 해산물·옥수수·감자 등을 우유나 크림으로 끓인 미국 동부 스타일의 걸쭉한 수프입니다. 옥수수와 타로를 사용한 하와이 몰로카이 섬 스타일 변형입니다.']
+]],['Bread Selection (브레드)',[
+['Spring Onion Cheese, Soft White, Whole Wheat Rolls','대파 치즈 롤, 소프트 화이트 롤, 통밀 롤','','']
+]],['Entrées (메인)',[
+['Laksa Lemak','락사 르막','Prawn, Tau Pok, Laksa Leaf, Chili','락사 르막은 코코넛 밀크가 들어간 페라나칸 스타일의 매콤한 국수 요리입니다. 새우, 타우 폭, 락사 잎, 칠리가 들어갑니다.'],
+['Murgh Makhani Butter Chicken 👍','무르그 마카니 버터 치킨','Garam Masala, Cilantro, Jasmine Rice, Paratha, Raita','무르그 마카니는 힌디어로 버터 치킨이라는 뜻으로, 토마토·크림·버터 베이스 소스에 닭고기를 조리한 북인도 커리입니다. 가람 마살라, 자스민 라이스, 파라타, 라이타가 곁들여집니다.'],
+['Pan-seared Pacific Scallops 👍👍','팬에 구운 태평양 가리비','Truffle Cremini Mushroom Risotto, Toasted Hazelnuts, Arugula-Lemon Oil Drizzle','태평양산 가리비 관자를 팬에 시어링한 메뉴입니다. 트러플 크레미니 버섯 리조또 위에 올리고, 구운 헤이즐넛과 루콜라 레몬 오일을 곁들입니다.'],
+['Tofu Poke','두부 포케','Tofu, Tamari, Cucumber, Red Cabbage, Radish, Brown Rice, Sesame, Avocado, Cilantro, Wasabi-Lemon Drizzle','포케는 하와이 원주민이 생선을 큐브로 썰어 양념해 먹던 것에서 유래한 덮밥 요리입니다. 생선 대신 두부를 사용한 채식 버전으로 타마리, 현미, 적양배추, 무, 아보카도, 와사비 레몬 드리즐이 들어갑니다.'],
+['Pan-seared Branzino Filet 👍👍','팬에 구운 브란지노 필레','Fennel, Cannellini Beans, Cerignola Olives, Sweet Pepper, Yukon Gold Potato, La Mancha Saffron Broth','브란지노 필레를 팬에 시어링한 메뉴입니다. 라만차 사프란으로 맛을 낸 육수에 펜넬, 카넬리니 콩, 체리뇰라 올리브, 유콘 골드 감자가 함께 들어갑니다.'],
+['Carved Slow-roasted Rosemary Beef Tenderloin 👍👍','로즈마리 소고기 안심 구이','Dijon Honey Roasted Parsnip Mash, Buttered Green Beans, Cabernet-Thyme Jus','소고기 안심을 로즈마리로 양념해 저온에서 천천히 로스팅한 후 잘라낸 메뉴입니다. 파스닙 매시, 그린빈, 카베르네 소비뇽과 타임으로 더한 소스가 곁들여집니다.'],
+['Chettinad Vegetable Kurma','체티나드 야채 쿠르마','Cardamom, Cinnamon, Chili, Cashew Nuts, Coconut Cream, Jasmine Rice, Raita, Paratha Flatbread','쿠르마는 인도 남부 체티나드 지역의 향신료 강한 커리입니다. 채식 버전으로 카다멈·시나몬·칠리와 캐슈넛, 코코넛 크림을 더해 만들며 자스민 라이스·라이타·파라타가 곁들여집니다.'],
+['Honey Soy-roasted Duck and Papaya Salad','꿀 간장에 구운 오리와 파파야 샐러드','White Radish, White Cabbage, Bell Pepper, Purple and Green Onion, Pomegranate Arils, Toasted Sesame, Miso-Ginger Dressing','오리고기를 꿀간장 글레이즈로 구워 파파야 샐러드와 함께 낸 아시안 퓨전 메뉴입니다. 무·양배추·피망·양파·석류·참깨를 미소 생강 드레싱으로 버무립니다.'],
+['Hainanese Chicken Rice','하이난 치킨 라이스','Sweet Dark Soy Sauce, Ginger-Garlic Sauce, Chili Sauce','하이난 치킨 라이스는 닭을 삶은 육수로 지은 밥과 함께 닭고기를 내는 싱가포르·말레이시아의 대표 요리입니다. 단간장, 생강·마늘 소스, 칠리 소스 세 가지를 곁들여 먹습니다.'],
+['Banana Leaf Steamed Filet of Salmon','바나나 잎 연어 찜','Steamed White Rice, Bok Choy','연어 필레를 바나나 잎으로 감싸 쪄낸 동남아식 메뉴입니다. 흰쌀밥과 청경채가 곁들여집니다.']
+]],['Desserts (디저트)',[
+['Almond-Pear Tart 👍👍','아몬드 배 타르트','Poached Pear, Almond Frangipane, Matcha Soil, Vanilla Ice Cream','프랑지판은 아몬드 가루와 버터·계란·설탕을 섞은 프랑스 페이스트리 크림입니다. 시럽에 졸인 배를 프랑지판과 함께 타르트로 굽고 말차 소일과 바닐라 아이스크림을 곁들입니다.'],
+['Salted Caramel Cheesecake 👍👍','솔티드 캐러멜 치즈케이크','Vanilla Cheesecake, Dulce de Leche Glaze, Peanut Butter Rice Crisp','바닐라 치즈케이크에 둘세 데 레체 글레이즈를 올리고 피넛 버터 라이스 크리스프를 곁들인 디저트입니다.'],
+['Chocolate Decadence 👍','초콜릿 데카당스','Bitter Chocolate Creme, Truffle Creme, Hazelnut Chiffon','비터 초콜릿 크림과 트러플 크림, 헤이즐넛 쉬폰 케이크를 겹겹이 올린 진한 초콜릿 디저트입니다.'],
+["Cookies 'n Cream Sundae 👍",'쿠키 앤 크림 선데','Cookies ’n Cream Ice Cream, Chocolate Wafer Cookies, Chocolate Fudge Sauce, Whipped Cream','쿠키 앤 크림 아이스크림에 초콜릿 웨이퍼 쿠키, 초콜릿 퍼지 소스, 휘핑크림을 올린 미국식 선데입니다.'],
+['Cappuccino Mousse','카푸치노 무스','Cappuccino Creme, Raspberry Coulis','카푸치노 크림에 라즈베리 쿨리를 곁들인 가벼운 식감의 무설탕 프랑스식 크림 디저트입니다.']
+]]];
+
+const pairCKids=[['Starters (에피타이저)',[
+['Sweet Carrot Soup','스위트 캐럿 수프','','버터 크루통이 곁들여진 달콤하고 부드러운 당근 수프'],
+['Garden Salad','가든 샐러드','','믹스 그린, 채 썬 당근, 오이 슬라이스로 구성된 신선한 샐러드 (드레싱 선택 가능)']
+]],['Entrées (메인) — 사이드: 자스민 라이스 / 프렌치 프라이 / 마카로니 & 치즈 + 야채 선택',[
+['Surf and Turf','서프 앤 터프','','부드러운 서로인 스테이크 + 그릴드 새우 (아이 메뉴지만 꽤 고급 구성)'],
+['Chicken Potstickers','치킨 포트스티커','','테리야키-참깨 소스와 함께 제공되는 치킨 포트스티커'],
+['Mini Cheeseburger','미니 치즈버거','','브리오슈 번에 제공되는 클래식 미니 치즈버거']
+]],['Disney Check Meals (건강식)',[
+['Turkey Bolognese','터키 볼로네제','','페투치네 파스타 위에 터키 볼로네제 소스, 찐 당근, 사과 슬라이스'],
+['Whole Wheat Penne Pasta','통밀 펜네 파스타','','통밀 펜네 파스타 + 토마토 소스 + 모짜렐라 치즈 + 브로콜리 (디저트: 사과 슬라이스)']
+]],['Desserts (디저트)',[
+['Strawberry Cheesecake','딸기 치즈케이크','','바닐라 치즈케이크 + 딸기 컴포트 + 휘핑크림'],
+['Selection of Assorted Ice Cream','아이스크림 선택','','다양한 아이스크림 선택 가능']
+]]];
+
+const pairCMain=[['Small Plates (에피타이저)',[
+['Pork and Shrimp Shumai 👍','돼지고기 새우 슈마이','Tobiko, Black Rice Vinegar, Chili Oil','슈마이는 광둥식 딤섬의 한 종류로, 얇은 피에 다진 고기와 새우를 채워 위를 열어둔 채 찐 만두입니다. 토비코, 흑미 식초, 고추기름이 곁들여집니다.'],
+['Green Papaya Salad','그린 파파야 샐러드','Long Beans, Chili, Grape Tomatoes, Palm Sugar-Lime Dressing','쏨땀으로 불리는 태국 동북부 이산 지역의 전통 샐러드입니다. 덜 익은 그린 파파야를 채 썰어 고추, 줄기콩, 방울토마토와 함께 팜슈가·라임 드레싱으로 버무립니다.'],
+['Summer Roll','섬머 롤 (월남쌈)','Shrimp, Glass Noodles, Coriander, Cucumber, Basil, Bibb Lettuce, Toasted Sesame Seeds, Hoisin-Soy Dipping','라이스 페이퍼에 새우, 당면, 고수, 오이, 바질, 비브 상추를 말아 호이신 간장 디핑 소스와 함께 먹는 베트남식 생춘권입니다.'],
+['Porcini Sacchetti 👍','포르치니 사케티 (주머니 모양 파스타)','Porcini Mushroom Pasta, Swiss and Fontina Cheese, Garlic, Thyme, Prosecco Wine Sauce','사케티는 이탈리아어로 작은 주머니라는 뜻의 복주머니 모양 속채움 파스타입니다. 포르치니 버섯과 스위스·폰티나 치즈를 채우고 프로세코 와인 소스를 곁들입니다.'],
+['Sliced Bresaola','슬라이스 브레사올라 (소고기 육포 요리)','Heirloom Tomatoes, Szechuan Pepper-Spiced Goat Cheese','브레사올라는 소고기 우둔살을 소금·향신료에 절여 공기에 말린 이탈리아 북부 발텔리나 지역의 건조 숙성 살라미입니다. 얇게 슬라이스하여 에어룸 토마토, 사천 후추 향의 염소 치즈와 함께 냅니다.'],
+['Baby Gem Salad 👍','베이비 젬 샐러드','Little Gem Lettuce, Cherry Tomatoes, Roasted Corn, Lime Pepitas, Cotija, Creamy Cumin-Avocado Dressing','리틀 젬은 로메인 상추를 작게 개량한 영국식 품종입니다. 리틀 젬, 구운 옥수수, 코티하 치즈, 페피타에 크리미 큐민·아보카도 드레싱을 곁들입니다.'],
+['Hot Sour Soup','산라탕','Tofu, Carrot, Shiitake Mushroom, Bamboo Shoots, Chinkiang Vinegar','산라탕은 식초의 신맛과 후추·고추의 매운맛이 특징인 중국 사천 지역 수프입니다. 두부, 당근, 표고버섯, 죽순에 진강 식초를 사용해 걸쭉하게 끓입니다.'],
+['French Onion Soup 👍👍','프렌치 어니언 수프','Gruyere Cheese Crouton','양파를 캐러멜라이즈할 때까지 볶은 후 비프 스톡을 부어 끓이는 프랑스 전통 수프입니다. 위에 그뤼예르 치즈를 올린 크루통을 띄워 오븐에 굽습니다.']
+]],['Bread Selection (브레드)',[
+['Matcha Marble, Soft White, Whole Wheat Rolls','말차 마블, 소프트 화이트 롤, 통밀 롤','','']
+]],['Entrées (메인)',[
+['Shiromaru','시로마루 (돈코츠 라멘)','Yonkotsu Pork Broth, Egg Noodles, Pork Belly Chashu, Sesame Kikurage and Oyster Mushrooms, Menma, Spring Onions','시로마루는 일본 라멘 체인 잇푸도의 시그니처 돈코츠 라멘 이름입니다. 돼지 사골을 오래 끓여 우려낸 진한 돈코츠 육수에 얇은 에그 누들, 차슈, 멘마, 목이·느타리버섯이 들어갑니다.'],
+['Chicken Shahi Korma 👍','치킨 샤히 코르마','Fenugreek, Yogurt, Cashew, Jasmine Rice, Raita, Mint Chutney, Naan','샤히 코르마는 힌디어로 왕의 코르마라는 뜻으로, 무굴 황실 요리에서 유래한 북인도 커리입니다. 요거트와 캐슈넛 베이스의 부드러운 화이트 커리이며 자스민 라이스, 라이타, 민트 처트니, 난과 함께 나옵니다.'],
+['Gemelli Bolognese 👍','제멜리 볼로네제','Slow-cooked Veal, Beef, Tomato Ragu, Thyme, Garlic Ciabatta, Parmigiano-Reggiano','제멜리는 이탈리아어로 쌍둥이라는 뜻의 두 가닥이 꼬인 모양 파스타입니다. 송아지고기·소고기를 토마토와 함께 오래 끓인 볼로네제 라구 소스에 버무리고 마늘 치아바타와 파르미지아노 레지아노 치즈를 곁들입니다.'],
+['Sesame Halloumi Filo Parcels','참깨 할루미 필로 파슬','Sweet Potato Tahini Mash, Spiced Red Capsicum Puree, Roasted Grape Tomatoes','할루미는 키프로스의 양·염소 우유 치즈로 가열해도 녹지 않아 구워 먹을 수 있습니다. 할루미와 참깨 페이스트 매시가 겹쳐진 필로 파슬에 고구마 타히니 매시, 향신료 피망 퓌레, 구운 방울토마토를 곁들입니다.'],
+['Seared Verlasso Salmon Filet 👍','시어드 베를라소 연어 필레','Californian Wild Honey Parsnip Puree, Orange-Fennel Essence, Sauteed Black Garlic Rapini','베를라소 연어 필레를 시어링한 후 파스닙 퓌레, 오렌지·펜넬 에센스, 흑마늘로 볶은 라피니와 함께 냅니다.'],
+['Roasted Prime Rib of Beef 👍👍','로스트 프라임 립','Double-baked Potato, Broccolini, Sweet Roasted Heirloom Carrots, Truffle Red Wine Veal Sauce','소의 갈비 등심을 통째로 로스팅한 미국식 전통 메뉴입니다. 두 번 구운 감자, 브로콜리니, 에어룸 당근에 트러플과 레드 와인을 더한 송아지 육수 소스가 곁들여집니다.'],
+['Baingan Bharta','바인간 바르타 (인도식 가지 요리)','Tomatoes, Onion, Ginger, Garlic, Cumin, Fresh Cilantro, Chili Pepper, Basmati Rice, Poppadum, Raita','바인간 바르타는 직화로 구운 가지를 으깨어 향신료와 볶아낸 인도 펀자브 지역의 채식 요리입니다. 바스마티 라이스, 파파둠, 라이타와 함께 나옵니다.'],
+['Mango-Chicken Salad','망고 치킨 샐러드','Lemon Grass Poached Chicken Breast, Oak Leaf, Lollo Rosa, Escarole, Orzo, Mango Slices, Pomegranate, Cucumber, Purple Onion, Toasted Banana Bread, Orange, Lime-Cilantro Dressing','레몬그라스로 익힌 닭가슴살을 망고와 함께 낸 샐러드입니다. 오크리프·롤로 로사·에스카롤 잎채소, 오르조, 석류, 오이, 적양파, 오렌지에 라임·고수 드레싱을 곁들이고 구운 바나나 브레드가 함께 나옵니다.'],
+['Hainanese Chicken Rice','하이난식 치킨 라이스','Sweet Dark Soy Sauce, Ginger-Garlic Sauce, Chili Sauce','하이난 치킨 라이스는 닭을 삶은 육수로 지은 밥과 함께 닭고기를 내는 싱가포르·말레이시아의 대표 요리입니다. 단간장, 생강·마늘 소스, 칠리 소스 세 가지를 곁들여 먹습니다.']
+]],['Desserts (디저트)',[
+['White Chocolate Bread Pudding 👍','화이트 초콜릿 브레드 푸딩','Butterscotch Sauce, Almond Florentine, Vanilla Ice Cream','오래된 빵을 달걀·우유 커스터드에 적셔 구워낸 영국식 전통 디저트입니다. 화이트 초콜릿을 더한 버전이며 버터스카치 소스, 아몬드 플로랑탱, 바닐라 아이스크림이 곁들여집니다.'],
+['Lemon Thai Basil Tart','레몬 타이 바질 타르트','Lemon Curd, Thai Basil Whipped Ganache, Raspberry Sauce','레몬 커드 타르트에 타이 바질을 우려낸 화이트 초콜릿 가나슈를 올리고 라즈베리 소스를 곁들인 디저트입니다.'],
+['Orange Almond Cake','오렌지 아몬드 케이크','Guava Gel, Lychee Yogurt Creme','밀가루 대신 아몬드 가루를 사용한 글루텐 프리 디저트입니다. 오렌지 향 케이크에 구아바 젤과 리치 요거트 크림이 곁들여집니다.'],
+['Chocolate Fudge Sundae 👍','초콜릿 퍼지 선데','Vanilla Ice Cream, Pecan Nut Brownie Bites, Chocolate Fudge Sauce, Whipped Cream','바닐라 아이스크림에 피칸 브라우니 조각과 진한 초콜릿 퍼지 소스, 휘핑크림을 올린 미국식 선데입니다.'],
+['Coconut Rice Pudding 👍','코코넛 라이스 푸딩','Strawberry-Lime Salsa, Fried Rice Noodles','코코넛 밀크로 만든 동남아 스타일 라이스 푸딩이며 딸기·라임 살사와 튀긴 쌀국수가 곁들여지는 무설탕 디저트입니다.']
+]]];
+
+const day4Kids=[['Starters (에피타이저)',[
+['Wonton Soup','완탕 수프','','야채 만두가 들어간 가벼운 간장-생강 육수 (Vegetarian)'],
+['Crunchy Rainbow Asian Salad','크런치 레인보우 아시안 샐러드','','믹스 그린, 채 썬 양배추·당근·피망, 오이 슬라이스 + 드레싱 선택 (Vegetarian)']
+]],['Entrées (메인) — 사이드: 자스민 라이스 / 감자튀김 / 맥앤치즈 / 야채 선택',[
+['Seared Teriyaki Salmon','시어드 데리야키 연어','','데리야키 연어 + 그린 라이스 + 달콤한 파인애플 망고 살사'],
+['Golden Chicken Strips','골든 치킨 스트립','','바삭한 치킨 스트립 + 랜치 드레싱'],
+['Roasted Chicken Alfredo Pizza','로스트 치킨 알프레도 피자','','로스트 치킨 알프레도 피자'],
+['Mini Cheeseburger','미니 치즈버거','','브리오슈 번 미니 치즈버거']
+]],['Disney Check Meals (건강식)',[
+['Beef Tenderloin','비프 텐더로인','','부드러운 소고기 안심 스테이크 + 코코넛 향 현미밥 + 스냅피 볶음 (디저트: 파인애플 파르페)'],
+['Whole Wheat Spiral Pasta','통밀 스파이럴 파스타','','통밀 스파이럴 파스타 + 터키 볼로네제 소스 + 찐 브로콜리 (디저트: 사과 슬라이스)']
+]],['Desserts (디저트)',[
+['Warm Fudge Chocolate Brownie','따뜻한 퍼지 초콜릿 브라우니','','따뜻한 퍼지 초콜릿 브라우니 + 초콜릿 소스 + 바닐라 아이스크림'],
+['Selection of Assorted Ice Cream','아이스크림 선택','','다양한 아이스크림 선택 가능']
+]]];
+
 const empty=[['메뉴 준비 중',[]]];
 function itemHtml(x){return `<article class="menu-item"><strong>${x[0]}</strong><b>${x[1]}</b>${x[2]?`<em>${x[2]}</em>`:''}${x[3]?`<p>${x[3]}</p>`:''}</article>`}
 function groupsHtml(groups){return groups.map(g=>`<section class="menu-group"><h3>${g[0]}</h3>${g[1].map(itemHtml).join('')}</section>`).join('')+'<button class="bottom-close" onclick="closeMenu()">메뉴 닫기</button>'}
 function show(groups,title,subtitle,icon){menuTitle.textContent=title;menuSubtitle.textContent=subtitle;mealIcon.textContent=icon;menuContent.innerHTML=groupsHtml(groups);menuPopup.classList.add('show');document.body.style.overflow='hidden'}
 function openMenu(type){show(type==='breakfast'?breakfastGroups:lunchGroups,type==='breakfast'?'조식 Table Service 메뉴':'중식 Table Service 메뉴','Animator’s Table · Navigator’s Club',type==='breakfast'?'🌅':'🌞')}
-function openDinnerMenu(pair,kind){let groups=empty;if(pair==='pairA')groups=kind==='kids'?pairAKids:pairAMain;show(groups,`${pair==='pairA'?'Pair A: The Clubs':pair==='pairB'?'Pair B: The Animators':pair==='pairC'?'Pair C: The Marketplace & Garden':'4일차 공통'} · ${kind==='kids'?'키즈':'디너'} 메뉴`,'석식 메뉴','🍽️')}
+function openDinnerMenu(pair,kind){
+let groups=empty;
+if(pair==='pairA')groups=kind==='kids'?pairAKids:pairAMain;
+else if(pair==='pairB')groups=kind==='kids'?pairBKids:pairBMain;
+else if(pair==='pairC')groups=kind==='kids'?pairCKids:pairCMain;
+else if(pair==='day4')groups=kind==='kids'?day4Kids:empty;
+show(groups,`${pair==='pairA'?'Pair A: The Clubs':pair==='pairB'?'Pair B: The Animators':pair==='pairC'?'Pair C: The Marketplace & Garden':'4일차 공통'} · ${kind==='kids'?'키즈':'디너'} 메뉴`,'석식 메뉴','🍽️')
+}
 function closeMenu(){menuPopup.classList.remove('show');document.body.style.overflow=''}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 </script></body></html>
