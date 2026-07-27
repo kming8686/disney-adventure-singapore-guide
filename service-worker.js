@@ -1,111 +1,103 @@
-const CACHE_NAME = 'disney-adventure-offline-v2';
-
-const PRECACHE_ASSETS = [
-  './',
-  './disney-adventure-singapore-guide.html',
-  './home.html',
-  './deck-plan.html',
-  './restaurant.html',
-  './shows-v4.html',
-  './adventure.html',
-  './tips.html',
-  './my-info.html',
-  './cruise-theme.css',
-  './stateroom-themes.json',
-  './manifest.webmanifest',
-  './pwa-register.js'
+const CACHE_NAME='disney-adventure-offline-v3';
+const BASE='/disney-adventure-singapore-guide/';
+const CORE_PAGES=[
+  BASE,
+  BASE+'disney-adventure-singapore-guide.html',
+  BASE+'home.html',
+  BASE+'deck-plan.html',
+  BASE+'restaurant.html',
+  BASE+'shows-v4.html',
+  BASE+'adventure.html',
+  BASE+'tips.html',
+  BASE+'my-info.html'
+];
+const CORE_ASSETS=[
+  BASE+'cruise-theme.css',
+  BASE+'stateroom-themes.json',
+  BASE+'manifest.webmanifest',
+  BASE+'pwa-register.js',
+  BASE+'app-enhancements.js'
 ];
 
-function normalizePath(requestUrl) {
-  const url = new URL(requestUrl);
-  let path = url.pathname;
-  if (path.endsWith('/')) path += 'disney-adventure-singapore-guide.html';
-  return path.split('/').pop() || 'disney-adventure-singapore-guide.html';
+async function cacheOne(cache,url){
+  try{
+    const response=await fetch(url,{cache:'reload'});
+    if(response.ok){await cache.put(url,response.clone());return response;}
+  }catch(error){console.warn('Precache skipped:',url,error)}
+  return null;
 }
 
-self.addEventListener('install', event => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
+function linkedLocalAssets(html,pageUrl){
+  const found=new Set();
+  const re=/(?:src|href)=["']([^"'#?]+)["']/gi;
+  let match;
+  while((match=re.exec(html))){
+    try{
+      const url=new URL(match[1],pageUrl);
+      if(url.origin===self.location.origin && url.pathname.startsWith(BASE)) found.add(url.href);
+    }catch(error){}
+  }
+  return [...found];
+}
 
-    // 각 파일을 독립적으로 저장하여 일부 파일에 문제가 있어도 나머지는 유지합니다.
-    for (const asset of PRECACHE_ASSETS) {
-      try {
-        const response = await fetch(asset, { cache: 'reload' });
-        if (response.ok) await cache.put(asset, response.clone());
-      } catch (error) {
-        console.warn('Precache skipped:', asset, error);
+self.addEventListener('install',event=>{
+  event.waitUntil((async()=>{
+    const cache=await caches.open(CACHE_NAME);
+    const discovered=new Set(CORE_ASSETS.map(x=>new URL(x,self.location.origin).href));
+    for(const page of CORE_PAGES){
+      const absolute=new URL(page,self.location.origin).href;
+      const response=await cacheOne(cache,absolute);
+      if(response){
+        const html=await response.clone().text();
+        linkedLocalAssets(html,absolute).forEach(x=>discovered.add(x));
       }
     }
-
+    for(const asset of discovered) await cacheOne(cache,asset);
     await self.skipWaiting();
   })());
 });
 
-self.addEventListener('activate', event => {
-  event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(
-      keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
-    );
+self.addEventListener('activate',event=>{
+  event.waitUntil((async()=>{
+    const keys=await caches.keys();
+    await Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)));
     await self.clients.claim();
   })());
 });
 
-self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+  const url=new URL(event.request.url);
+  if(url.origin!==self.location.origin || !url.pathname.startsWith(BASE))return;
 
-  const url = new URL(event.request.url);
-  if (url.origin !== self.location.origin) return;
-
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const fileName = normalizePath(event.request.url);
-
-      // 방문 여부와 상관없이 설치 때 저장한 HTML을 먼저 사용합니다.
-      const cached =
-        await cache.match(event.request, { ignoreSearch: true }) ||
-        await cache.match('./' + fileName, { ignoreSearch: true });
-
-      if (cached) {
-        // 온라인이면 백그라운드에서 새 버전으로 갱신합니다.
-        event.waitUntil((async () => {
-          try {
-            const fresh = await fetch(event.request, { cache: 'no-store' });
-            if (fresh.ok) await cache.put('./' + fileName, fresh.clone());
-          } catch (_) {}
-        })());
-        return cached;
+  if(event.request.mode==='navigate'){
+    event.respondWith((async()=>{
+      const cache=await caches.open(CACHE_NAME);
+      const exact=await cache.match(event.request,{ignoreSearch:true});
+      if(exact){
+        event.waitUntil(fetch(event.request).then(r=>{if(r.ok)return cache.put(event.request,r.clone())}).catch(()=>{}));
+        return exact;
       }
-
-      try {
-        const fresh = await fetch(event.request);
-        if (fresh.ok) await cache.put('./' + fileName, fresh.clone());
+      try{
+        const fresh=await fetch(event.request);
+        if(fresh.ok)await cache.put(event.request,fresh.clone());
         return fresh;
-      } catch (error) {
-        return (
-          await cache.match('./disney-adventure-singapore-guide.html') ||
-          await cache.match('./home.html') ||
-          new Response('오프라인 상태이며 저장된 페이지가 없습니다.', {
-            headers: { 'Content-Type': 'text/plain; charset=utf-8' }
-          })
-        );
+      }catch(error){
+        return (await cache.match(new URL(BASE+'home.html',self.location.origin).href)) ||
+          new Response('오프라인 상태이며 저장된 페이지가 없습니다.',{headers:{'Content-Type':'text/plain; charset=utf-8'}});
       }
     })());
     return;
   }
 
-  event.respondWith((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    const cached = await cache.match(event.request, { ignoreSearch: true });
-    if (cached) return cached;
-
-    try {
-      const fresh = await fetch(event.request);
-      if (fresh.ok) await cache.put(event.request, fresh.clone());
+  event.respondWith((async()=>{
+    const cache=await caches.open(CACHE_NAME);
+    const cached=await cache.match(event.request,{ignoreSearch:true});
+    if(cached)return cached;
+    try{
+      const fresh=await fetch(event.request);
+      if(fresh.ok)await cache.put(event.request,fresh.clone());
       return fresh;
-    } catch (error) {
-      return new Response('', { status: 504, statusText: 'Offline' });
-    }
+    }catch(error){return new Response('',{status:504,statusText:'Offline'})}
   })());
 });
