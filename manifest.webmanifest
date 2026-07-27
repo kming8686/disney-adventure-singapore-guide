@@ -1,12 +1,19 @@
 {
+  "id": "/disney-adventure-singapore-guide/",
   "name": "Disney Adventure Singapore Guide",
   "short_name": "Disney Adventure",
   "description": "Disney Adventure 싱가포르 크루즈 오프라인 가이드",
   "start_url": "./home.html",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait",
   "background_color": "#edf2f8",
   "theme_color": "#102c5b",
-  "lang": "ko-KR"
+  "lang": "ko-KR",
+  "shortcuts": [
+    {"name":"레스토랑","short_name":"다이닝","url":"./restaurant.html"},
+    {"name":"공연","short_name":"공연","url":"./shows-v4.html"},
+    {"name":"내 일정","short_name":"일정","url":"./my-info.html"}
+  ]
 }
