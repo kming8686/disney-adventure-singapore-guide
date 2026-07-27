@@ -1,0 +1,12 @@
+{
+  "name": "Disney Adventure Singapore Guide",
+  "short_name": "Disney Adventure",
+  "description": "Disney Adventure 싱가포르 크루즈 오프라인 가이드",
+  "start_url": "./home.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#edf2f8",
+  "theme_color": "#102c5b",
+  "lang": "ko-KR"
+}
