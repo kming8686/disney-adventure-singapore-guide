@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Disney Adventure · 다이닝</title><link rel="stylesheet" href="cruise-theme.css"><style>
 :root{--navy:#0a2857;--blue:#176cc2;--gold:#e7b83e;--line:#c6dceb;--muted:#667b91;--ink:#132f55}*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#dff4fa,#f6fbff 44%,#fff7e6);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.page{max-width:520px;min-height:100vh;margin:auto;padding:0 4px 28px;background:linear-gradient(160deg,#fbfdff,#eef7fc)}.head{margin:0 -4px 10px;padding:17px 18px 16px;color:#fff;background:linear-gradient(145deg,#071f4b,#0d4b96 58%,#36aeca)}.back{color:#fff4b8;text-decoration:none;font-size:27px}.head h1{margin:8px 0 2px;font-family:Georgia,serif;font-size:29px}.head p{margin:0;font-size:12px;opacity:.9}.notice{margin:0 0 9px;padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#edf7ff;color:#315675;font-size:11px;line-height:1.7}.list{display:grid;gap:8px}.section{border:1px solid #dbe8f1;border-radius:16px;background:#fff;box-shadow:0 7px 18px rgba(11,49,92,.09);overflow:hidden}.section>summary{display:flex;align-items:center;gap:14px;padding:15px 16px;list-style:none;cursor:pointer;font-size:14px;font-weight:900}.section>summary::-webkit-details-marker{display:none}.section>summary:after{content:'⌄';margin-left:auto;color:var(--blue);font-size:20px}.section[open]>summary:after{content:'⌃'}.emoji{width:24px;text-align:center;font-size:22px}.section-body{padding:0 10px 12px;border-top:1px solid #d9e8f2;color:#536b82;font-size:11px;line-height:1.55}.subhead,.pair{margin:9px 0 5px;padding:9px 10px;border-left:4px solid var(--blue);background:linear-gradient(135deg,#eaf4fc,#f8fcff);color:#163b62;font-weight:900}.subhead-row,.pair-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.heading-menu,.pair-action{border:1px solid #7fb5d8;border-radius:999px;background:#fff;color:var(--blue);padding:5px 10px;font-size:10px;font-weight:900;cursor:pointer}.pair-actions{display:flex;gap:5px;flex:0 0 auto}.pair span{display:block;margin-top:3px;color:#536b82;font-size:10px;font-weight:500}.venue{position:relative;display:block;margin:6px 0;padding:10px 42px 9px 10px;border:1px solid var(--line);border-radius:10px;background:#fbfdff;color:var(--blue);text-decoration:none}.venue b,.venue span{display:block}.venue b{font-size:12px}.venue span{margin-top:2px;color:var(--muted);font-size:10px}.venue i{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-style:normal}.table-card{position:relative;margin:6px 0;border:1px solid var(--line);border-radius:11px;background:#fbfdff}.menu-open{display:block;width:100%;padding:11px 42px 10px 11px;border:0;background:transparent;text-align:left;color:var(--blue);cursor:pointer}.menu-open b,.menu-open span{display:block}.menu-open span{margin-top:3px;color:var(--muted);font-size:10px}.deck-pin{position:absolute;right:10px;bottom:10px;color:var(--blue);text-decoration:none}.dinner-note{margin:8px 0;padding:11px;border-radius:12px;background:#fff4f4;color:#536173;line-height:1.65}.rotation-wrap{overflow:auto;margin:10px 0}.rotation{width:100%;min-width:480px;border-collapse:collapse;text-align:center;font-size:9px}.rotation th,.rotation td{padding:8px 5px;border:1px solid #aab8c4}.rotation th{background:#c83b3d;color:#fff}.rotation td:first-child{font-weight:900;background:#f3f6f8}.rotation .day4{background:#fff5d7;color:#a46a00;text-align:left;font-weight:800}.legend{font-size:9px;color:#6b7784;line-height:1.5}.popup{position:fixed;inset:0;display:none;align-items:flex-end;justify-content:center;background:rgba(8,29,58,.62);z-index:50}.popup.show{display:flex}.menu-sheet{width:min(520px,100%);max-height:94vh;background:#fffdf8;border-radius:24px 24px 0 0;overflow:hidden}.menu-head{display:flex;align-items:center;gap:10px;padding:15px 16px;background:linear-gradient(145deg,#071f4b,#0d4b96 58%,#36aeca);color:#fff}.meal-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:#ffffff2a}.menu-head h2{margin:0;font-size:14px}.menu-head p{margin:2px 0 0;font-size:10px;opacity:.85}.menu-close{margin-left:auto;border:0;background:transparent;color:#fff;font-size:25px}.menu-scroll{max-height:calc(94vh - 66px);padding:12px 10px 24px;overflow:auto;background:linear-gradient(180deg,#f8fbff,#fffdf8)}.menu-group{margin-bottom:14px;padding:10px;border:1px solid #d9e8f2;border-radius:15px;background:#fff}.menu-group h3{margin:0 0 8px;padding:8px 10px;border-radius:10px;background:#eef6fc;color:var(--navy);font-size:12px;border-left:4px solid var(--gold)}.menu-item{margin-bottom:8px;padding:10px 11px;border:1px solid #e0ebf3;border-radius:11px;background:#fffdf9}.menu-item:last-child{margin-bottom:0}.menu-item strong{display:block;color:var(--blue);font-size:12px}.menu-item strong:before{content:'✦ ';color:var(--gold)}.menu-item b{display:block;margin:2px 0;font-size:12px}.menu-item em{display:block;color:#738095;font-size:9px;line-height:1.45}.menu-item p{margin:5px 0 0;color:#51677c;font-size:10px;line-height:1.65}.menu-note{padding:10px;border-radius:10px;background:#fff7d7;color:#735612;font-size:10px}.bottom-close{width:100%;height:44px;border:0;border-radius:11px;background:linear-gradient(135deg,#f2cf5a,#dca62f);color:#102c5b;font-weight:900}
-.concierge-card{position:relative;margin:7px 0;padding:10px 76px 9px 11px;border:1px solid #f0a4a4;border-radius:10px;background:#fffdfd}
-.concierge-card b{display:block;color:#c83b3d;font-size:12px}
+.concierge-card{position:relative;margin:7px 0;padding:10px 76px 9px 11px;border:1px solid var(--line);border-radius:10px;background:#fbfdff;box-shadow:0 2px 7px rgba(11,49,92,.04)}
+.concierge-card b{display:block;color:var(--blue);font-size:12px}
 .concierge-card span{display:block;margin-top:3px;color:#68788d;font-size:10px}
 .concierge-actions{position:absolute;right:10px;top:50%;display:flex;align-items:center;gap:10px;transform:translateY(-50%)}
-.concierge-actions a{color:#c83b3d;text-decoration:none;font-size:16px}
-.dining-info{margin:7px 0 9px;padding:10px 12px;border-radius:10px;background:#fff2f2;color:#7a4d55;font-size:10px;line-height:1.75}
+.concierge-actions a,.concierge-actions button{border:0;background:transparent;color:var(--blue);text-decoration:none;font-size:16px;line-height:1;cursor:pointer;padding:0;font-family:inherit}
+.dining-info{margin:7px 0 9px;padding:10px 12px;border-radius:10px;background:#edf7ff;color:#315675;font-size:10px;line-height:1.75}
 .dining-info div{margin:1px 0}
-.dining-card{position:relative;margin:7px 0;padding:10px 78px 9px 11px;border:1px solid #f0a4a4;border-radius:10px;background:#fff}
-.dining-card b{display:block;color:#c83b3d;font-size:12px}
+.dining-card{position:relative;margin:7px 0;padding:10px 78px 9px 11px;border:1px solid var(--line);border-radius:10px;background:#fbfdff}
+.dining-card b{display:block;color:var(--blue);font-size:12px}
 .dining-card span{display:block;margin-top:3px;color:#68788d;font-size:10px;line-height:1.45}
 .dining-card .subline{color:#536173}
 .dining-actions{position:absolute;right:10px;top:50%;display:flex;align-items:center;gap:10px;transform:translateY(-50%)}
-.dining-actions a,.dining-actions button{border:0;background:transparent;color:#c83b3d;text-decoration:none;font-size:16px;cursor:pointer;padding:0}
-.nested{margin:7px 0;border:1px solid #f0a4a4;border-radius:10px;background:#fff;overflow:hidden}
-.nested>summary{display:flex;align-items:center;gap:8px;padding:11px 12px;list-style:none;cursor:pointer;color:#c83b3d;font-size:12px;font-weight:900}
+.dining-actions a,.dining-actions button{border:0;background:transparent;color:var(--blue);text-decoration:none;font-size:16px;cursor:pointer;padding:0}
+.nested{margin:7px 0;border:1px solid var(--line);border-radius:10px;background:#fbfdff;overflow:hidden}
+.nested>summary{display:flex;align-items:center;gap:8px;padding:11px 12px;list-style:none;cursor:pointer;color:var(--blue);font-size:12px;font-weight:900}
 .nested>summary::-webkit-details-marker{display:none}
 .nested>summary:after{content:'⌄';margin-left:auto}
 .nested[open]>summary:after{content:'⌃'}
-.nested-body{padding:0 12px 11px;border-top:1px solid #f3d0d0;color:#5c6b7b;font-size:10px;line-height:1.7}
+.nested-body{padding:0 12px 11px;border-top:1px solid #d9e8f2;color:#5c6b7b;font-size:10px;line-height:1.7}.nested-body p{margin:8px 0}.nested-body strong{color:var(--blue)}
 
 @media(max-width:390px){.pair-head{align-items:flex-start;flex-direction:column}.pair-actions{align-self:flex-end}}
 </style></head><body><main class="page"><header class="head"><a class="back" onclick="if(history.length>1){history.back();return false}" href="index.html">‹</a><h1>Dining Guide</h1><p>Disney Adventure · 식당과 바를 한눈에</p></header><aside class="notice">• 로테이션 다이닝은 석식만 자동 배정됩니다.<br>• 실제 운영 시간과 메뉴는 Navigator 앱에서 최종 확인하세요.</aside><section class="list">
 <details class="section"><summary><span class="emoji">🌅</span>로테이션 다이닝 (조식)</summary><div class="section-body"><div class="subhead">Buffet (Self-Service)</div><a class="venue" href="deck-plan.html?q=Pixar%20Market"><b>Pixar Market</b><span>7:00 AM–10:45 AM</span><i>📍</i></a><a class="venue" href="deck-plan.html?q=Enchanted%20Summer"><b>Enchanted Summer</b><span>8:00 AM–10:30 AM</span><i>📍</i></a><div class="subhead subhead-row"><span>Table Service (Menu)</span><button class="heading-menu" onclick="openMenu('breakfast')">&lt;Menu&gt;</button></div><div class="table-card"><button class="menu-open" onclick="openMenu('breakfast')"><b>Animator's Table</b><span>8:30 AM–10:00 AM · 조식 메뉴</span></button><a class="deck-pin" href="deck-plan.html?q=Animators%20Table">📍</a></div><div class="table-card"><button class="menu-open" onclick="openMenu('breakfast')"><b>Navigator's Club</b><span>8:00 AM–9:30 AM · 조식 메뉴</span></button><a class="deck-pin" href="deck-plan.html?q=Navigators%20Club">📍</a></div></div></details>
 <details class="section"><summary><span class="emoji">🌞</span>로테이션 다이닝 (중식)</summary><div class="section-body"><div class="subhead">Buffet</div><a class="venue" href="deck-plan.html?q=Pixar%20Market"><b>Pixar Market</b><span>12:00 PM–3:00 PM (Day 1), 12:00 PM–2:00 PM (Day 2–4)</span><i>📍</i></a><a class="venue" href="deck-plan.html?q=Enchanted%20Summer"><b>Enchanted Summer</b><span>12:00 PM–2:30 PM (Day 1), 12:00 PM–2:00 PM (Day 2–4)</span><i>📍</i></a><div class="subhead subhead-row"><span>Table Service (Menu)</span><button class="heading-menu" onclick="openMenu('lunch')">&lt;Menu&gt;</button></div><div class="table-card"><button class="menu-open" onclick="openMenu('lunch')"><b>Animator's Table</b><span>12:00 PM–1:30 PM · 중식 메뉴</span></button><a class="deck-pin" href="deck-plan.html?q=Animators%20Table">📍</a></div><div class="table-card"><button class="menu-open" onclick="openMenu('lunch')"><b>Navigator's Club</b><span>12:00 PM–1:30 PM · 중식 메뉴</span></button><a class="deck-pin" href="deck-plan.html?q=Navigators%20Club">📍</a></div></div></details>
 <details class="section"><summary><span class="emoji">🏰</span>로테이션 다이닝 (석식)</summary><div class="section-body"><div class="dinner-note">• 6개 정찬 식당이 2개씩 페어로 운영되며 페어끼리 메뉴 동일<br>• 디너 2부제: 5:45 PM / 8:15 PM<br>• 실제 배정 식당과 시간은 Navigator 앱에서 확인하세요.</div><div class="rotation-wrap"><table class="rotation"><tr><th rowspan="2">구분</th><th colspan="3">로테이션 1</th><th colspan="3">로테이션 2</th></tr><tr><th>그룹1</th><th>그룹2</th><th>그룹3</th><th>그룹4</th><th>그룹5</th><th>그룹6</th></tr><tr><td>1일차</td><td>팔레트</td><td>픽사</td><td>네비</td><td>테이블</td><td>썸머</td><td>할리우드</td></tr><tr><td>2일차</td><td>픽사</td><td>네비</td><td>팔레트</td><td>썸머</td><td>할리우드</td><td>테이블</td></tr><tr><td>3일차</td><td>네비</td><td>팔레트</td><td>픽사</td><td>할리우드</td><td>테이블</td><td>썸머</td></tr><tr><td colspan="7" class="day4">ⓘ 아래는 4박 일정 전용</td></tr><tr><td>4일차</td><td>팔레트</td><td>픽사</td><td>네비</td><td>테이블</td><td>썸머</td><td>할리우드</td></tr></table></div><p class="legend">팔레트=Animator's Palate · 픽사=Pixar Market · 네비=Navigator's Club<br>테이블=Animator's Table · 썸머=Enchanted Summer · 할리우드=Hollywood Spotlight Club</p><div class="pair"><div class="pair-head"><div><b>Pair A: The Clubs</b><span>캐릭터 쇼 디너: 미키, 미니, 도날드, 데이지 등장</span></div><div class="pair-actions"><button class="pair-action" onclick="openDinnerMenu('pairA','kids')">키즈 메뉴</button><button class="pair-action" onclick="openDinnerMenu('pairA','main')">메뉴</button></div></div></div><a class="venue" href="deck-plan.html?q=Navigators%20Club"><b>Navigator's Club</b><i>📍</i></a><a class="venue" href="deck-plan.html?q=Hollywood%20Spotlight%20Club"><b>Hollywood Spotlight Club</b><i>📍</i></a><div class="pair"><div class="pair-head"><div><b>Pair B: The Animators</b><span>디즈니·픽사 애니메이션 인터랙티브 쇼</span></div><div class="pair-actions"><button class="pair-action" onclick="openDinnerMenu('pairB','kids')">키즈 메뉴</button><button class="pair-action" onclick="openDinnerMenu('pairB','main')">메뉴</button></div></div></div><a class="venue" href="deck-plan.html?q=Animators%20Palate"><b>Animator's Palate</b><i>📍</i></a><a class="venue" href="deck-plan.html?q=Animators%20Table"><b>Animator's Table</b><i>📍</i></a><div class="pair"><div class="pair-head"><div><b>Pair C: The Marketplace &amp; Garden</b><span>일반 정찬</span></div><div class="pair-actions"><button class="pair-action" onclick="openDinnerMenu('pairC','kids')">키즈 메뉴</button><button class="pair-action" onclick="openDinnerMenu('pairC','main')">메뉴</button></div></div></div><a class="venue" href="deck-plan.html?q=Pixar%20Market"><b>Pixar Market</b><i>📍</i></a><a class="venue" href="deck-plan.html?q=Enchanted%20Summer"><b>Enchanted Summer</b><i>📍</i></a><div class="pair"><div class="pair-head"><div><b>4일차: 전 레스토랑 메뉴 동일</b><span>공연 없음</span></div><div class="pair-actions"><button class="pair-action" onclick="openDinnerMenu('day4','kids')">키즈 메뉴</button><button class="pair-action" onclick="openDinnerMenu('day4','main')">메뉴</button></div></div></div></div></details><details class="section"><summary><span class="emoji">🥂</span>컨시어지 다이닝</summary><div class="section-body">
-<div class="concierge-card"><b>Concierge Lounge Breakfast</b><span>07:00AM~10:30AM</span><div class="concierge-actions"><a href="#" aria-label="메뉴">🍴</a><a href="deck-plan.html?q=Concierge%20Lounge" aria-label="위치">📍</a></div></div>
-<div class="concierge-card"><b>Concierge Lounge Lunch</b><span>11:00AM~4:30PM</span><div class="concierge-actions"><a href="#" aria-label="메뉴">🍴</a><a href="deck-plan.html?q=Concierge%20Lounge" aria-label="위치">📍</a></div></div>
-<div class="concierge-card"><b>Concierge Sundeck</b><span>07:00AM~10:00PM</span><div class="concierge-actions"><a href="#" aria-label="메뉴">🍴</a><a href="deck-plan.html?q=Concierge%20Sundeck" aria-label="위치">📍</a></div></div>
-<div class="concierge-card"><b>Hollywood Spotlight Club (Day 1 only)</b><span>11:45AM~2:00PM</span><div class="concierge-actions"><a href="#" aria-label="메뉴">🍴</a><a href="deck-plan.html?q=Hollywood%20Spotlight%20Club" aria-label="위치">📍</a></div></div>
+<div class="concierge-card"><b>Concierge Lounge Breakfast</b><span>07:00AM~10:30AM</span><div class="concierge-actions"><button onclick="openConciergeMenu('breakfast')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Concierge%20Lounge" aria-label="위치">📍</a></div></div>
+<div class="concierge-card"><b>Concierge Lounge Lunch</b><span>11:00AM~4:30PM</span><div class="concierge-actions"><button onclick="openConciergeMenu('lunch')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Concierge%20Lounge" aria-label="위치">📍</a></div></div>
+<div class="concierge-card"><b>Concierge Sundeck</b><span>07:00AM~10:00PM</span><div class="concierge-actions"><button onclick="openConciergeMenu('sundeck')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Concierge%20Sundeck" aria-label="위치">📍</a></div></div>
+<div class="concierge-card"><b>Hollywood Spotlight Club (Day 1 only)</b><span>11:45AM~2:00PM</span><div class="concierge-actions"><button onclick="openConciergeMenu('hollywood')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Hollywood%20Spotlight%20Club" aria-label="위치">📍</a></div></div>
 </div></details>
 <details class="section"><summary><span class="emoji">🍕</span>퀵 서비스 다이닝</summary><div class="section-body">
 <div class="dining-info">
@@ -39,11 +39,11 @@
 <div>• Day1 은 12:00PM에 오픈</div>
 </div>
 
-<div class="dining-card"><b>Pizza Planet</b><span>토이스토리 테마 / 피자</span><span>10:30AM~6:00PM, 9:00PM~12:00AM</span><div class="dining-actions"><button aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Pizza%20Planet" aria-label="위치">📍</a></div></div>
-<div class="dining-card"><b>Gramma Tala's Kitchen</b><span>모아나 테마 / 동남아·태평양 요리</span><span>11:00AM~6:00PM, 10:00PM~12:00AM</span><div class="dining-actions"><button aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Gramma%20Talas%20Kitchen" aria-label="위치">📍</a></div></div>
-<div class="dining-card"><b>Mowgli's Eatery</b><span>정글북 테마 / 인도 요리</span><span>11:00AM~6:00PM, 10:00PM~12:00AM</span><div class="dining-actions"><button aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Mowglis%20Eatery" aria-label="위치">📍</a></div></div>
-<div class="dining-card"><b>Stitch's 'Ohana Grill</b><span>스티치 테마 / 하와이안 그릴</span><span>10:30AM~10:00PM</span><div class="dining-actions"><button aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Stitchs%20Ohana%20Grill" aria-label="위치">📍</a></div></div>
-<div class="dining-card"><b>Cosmic Kebabs</b><span>미즈 마블 테마 / 지중해 케밥</span><span>10:30AM~10:00PM</span><div class="dining-actions"><button aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Cosmic%20Kebabs" aria-label="위치">📍</a></div></div>
+<div class="dining-card"><b>Pizza Planet</b><span>토이스토리 테마 / 피자</span><span>10:30AM~6:00PM, 9:00PM~12:00AM</span><div class="dining-actions"><button onclick="openQuickMenu('pizza')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Pizza%20Planet" aria-label="위치">📍</a></div></div>
+<div class="dining-card"><b>Gramma Tala's Kitchen</b><span>모아나 테마 / 동남아·태평양 요리</span><span>11:00AM~6:00PM, 10:00PM~12:00AM</span><div class="dining-actions"><button onclick="openQuickMenu('gramma')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Gramma%20Talas%20Kitchen" aria-label="위치">📍</a></div></div>
+<div class="dining-card"><b>Mowgli's Eatery</b><span>정글북 테마 / 인도 요리</span><span>11:00AM~6:00PM, 10:00PM~12:00AM</span><div class="dining-actions"><button onclick="openQuickMenu('mowgli')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Mowglis%20Eatery" aria-label="위치">📍</a></div></div>
+<div class="dining-card"><b>Stitch's 'Ohana Grill</b><span>스티치 테마 / 하와이안 그릴</span><span>10:30AM~10:00PM</span><div class="dining-actions"><button onclick="openQuickMenu('stitch')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Stitchs%20Ohana%20Grill" aria-label="위치">📍</a></div></div>
+<div class="dining-card"><b>Cosmic Kebabs</b><span>미즈 마블 테마 / 지중해 케밥</span><span>10:30AM~10:00PM</span><div class="dining-actions"><button onclick="openQuickMenu('cosmic')" aria-label="메뉴">🍴</button><a href="deck-plan.html?q=Cosmic%20Kebabs" aria-label="위치">📍</a></div></div>
 </div></details>
 
 <details class="section"><summary><span class="emoji">🍽️</span>룸서비스</summary><div class="section-body">
@@ -54,8 +54,8 @@
 <div>• 운영 시간은 승선 날 1:30PM부터 하선 날 1:00AM까지</div>
 </div>
 
-<div class="dining-card"><b>조식 신청</b><span>배달료 서비스 요금 없음. 전날 객실에 비치된 카드에 메뉴 체크 후 문 손잡이에 걸어두기 (~3:00AM)</span><div class="dining-actions"><button aria-label="룸서비스">🍴</button></div></div>
-<div class="dining-card"><b>24시간 룸서비스 (서비스 요금 약 $5.9)</b><span>객실 전화 Dial "0"</span><div class="dining-actions"><button aria-label="룸서비스">🍴</button></div></div>
+<div class="dining-card"><b>조식 신청</b><span>배달료 서비스 요금 없음. 전날 객실에 비치된 카드에 메뉴 체크 후 문 손잡이에 걸어두기 (~3:00AM)</span><div class="dining-actions"><button onclick="openRoomMenu('breakfast')" aria-label="룸서비스">🍴</button></div></div>
+<div class="dining-card"><b>24시간 룸서비스 (서비스 요금 약 $5.9)</b><span>객실 전화 Dial "0"</span><div class="dining-actions"><button onclick="openRoomMenu('allDay')" aria-label="룸서비스">🍴</button></div></div>
 </div></details>
 
 <details class="section"><summary><span class="emoji">🍹</span>카페 · 바 · 라운지</summary><div class="section-body">
@@ -89,14 +89,50 @@
 <div>• 디너는 메뉴마다 추가 요금 있음</div>
 </div>
 
-<details class="nested"><summary>PALO Trattoria <span style="margin-left:6px;color:#667b91;font-weight:500">이탈리안 정찬 (베네치아 컨셉)</span><a href="deck-plan.html?q=PALO%20Trattoria" onclick="event.stopPropagation()" style="margin-left:auto;color:#c83b3d;text-decoration:none">📍</a></summary><div class="nested-body">예약형 성인 전용 유료 다이닝입니다. 세부 메뉴와 가격은 Navigator 앱에서 확인하세요.</div></details>
-<details class="nested"><summary>Mike &amp; Sulley's – Flavors of Asia <span style="margin-left:6px;color:#667b91;font-weight:500">DCL 최초의 프리미엄 · Monsters Inc Harryhausen 컨셉</span><a href="deck-plan.html?q=Mike%20and%20Sulleys%20Flavors%20of%20Asia" onclick="event.stopPropagation()" style="margin-left:auto;color:#c83b3d;text-decoration:none">📍</a></summary><div class="nested-body">예약형 유료 다이닝입니다. 세부 메뉴와 가격은 Navigator 앱에서 확인하세요.</div></details>
+<details class="nested"><summary>PALO Trattoria <span style="margin-left:6px;color:#667b91;font-weight:500">이탈리안 정찬 (베네치아 컨셉)</span><a href="deck-plan.html?q=PALO%20Trattoria" onclick="event.stopPropagation()" style="margin-left:auto;color:var(--blue);text-decoration:none">📍</a></summary><div class="nested-body">예약형 성인 전용 유료 다이닝입니다. 세부 메뉴와 가격은 Navigator 앱에서 확인하세요.</div></details>
+<details class="nested"><summary>Mike &amp; Sulley's – Flavors of Asia <span style="margin-left:6px;color:#667b91;font-weight:500">DCL 최초의 프리미엄 · Monsters Inc Harryhausen 컨셉</span><a href="deck-plan.html?q=Mike%20and%20Sulleys%20Flavors%20of%20Asia" onclick="event.stopPropagation()" style="margin-left:auto;color:var(--blue);text-decoration:none">📍</a></summary><div class="nested-body">예약형 유료 다이닝입니다. 세부 메뉴와 가격은 Navigator 앱에서 확인하세요.</div></details>
 </div></details>
 
 <details class="section"><summary><span class="emoji">💡</span>음료 · 주류 반입</summary><div class="section-body">
-<details class="nested"><summary>🥤 24시간 무료 음료 (Beverage Station)</summary><div class="nested-body">24시간 이용 가능한 무료 음료 스테이션 안내입니다. 실제 제공 품목과 위치는 Navigator 앱 및 선내 안내를 확인하세요.</div></details>
-<details class="nested"><summary>🍺 비어머그 · 와인 패키지</summary><div class="nested-body">비어머그와 와인 패키지는 유료입니다. 구매 조건과 제공 범위는 선내 판매처 또는 Navigator 앱에서 확인하세요.</div></details>
-<details class="nested"><summary>🍷 주류 반입 규정 — 2026/6/3 변경</summary><div class="nested-body">이미지에는 상세 규정이 펼쳐져 있지 않아 제목만 반영했습니다. 최신 반입 가능 수량과 제한은 Disney Cruise Line 공식 안내를 확인하세요.</div></details>
+<details class="nested"><summary>🥤 24시간 무료 음료 (Beverage Station)</summary><div class="nested-body">
+<p><strong>✅ 무료 제공</strong></p>
+<p>물 / 얼음 / 탄산 / 주스 / 우유 / 아이스티 / 핫초코 / 커피<br>
+무료 무제한·셀프, 종이컵 비치, 텀블러 챙기면 좋음</p>
+<p><strong>📍 Beverage Station (24시간)</strong></p>
+<p>Deck 10 Garden Stage 📍<br>
+Deck 10 Discovery Reef 📍<br>
+Deck 17 Toy Story Zone 📍</p>
+<p><strong>📍 물 전용 필터 식수대 (24시간)</strong></p>
+<p>Deck 7 선수 양쪽 끝, 마블 랜딩 근처</p>
+</div></details>
+<details class="nested"><summary>🍺 비어머그 · 와인 패키지</summary><div class="nested-body">
+<p><strong>🍺 비어머그 패키지</strong></p>
+<p>첫 잔: $22.5 (생맥 + 토큰)<br>
+리필: 23온스 맥주 → 16온스 가격($9~11)<br>
+앱에서 사전 구매하면 방에 비어머그 미리 배달<br>
+로테이션 다이닝 및 바에서 사용 가능<br>
+토큰으로 변경 요청 후 사용하다가 하선할 때 다시 새 머그로 교환 가능</p>
+<p><strong>🍷 와인 패키지</strong></p>
+<p>식당 정찬 시 와인 패키지 구매 가능<br>
+구매 후 다음 날 디너에서도 남은 와인 이어 마시기 OK<br>
+잔량은 식당에서 자체 보관</p>
+</div></details>
+<details class="nested"><summary>🍷 주류 반입 규정 — 2026/6/3 변경</summary><div class="nested-body">
+<p><strong>🚨 2026년 6월 3일 이후 항차 (DCL 전체 적용)</strong></p>
+<p>와인/샴페인: 성인 1명당 1병 (750ml 이하) ← 기존 2병에서 축소<br>
+또는 맥주: 성인 1명당 6캔 (각 12oz / 약 355ml 이하)</p>
+<p><strong>✅ 반입 방식</strong></p>
+<p>핸드캐리(기내용)만 가능 — 체크인 캐리어 ❌<br>
+면세점 구매분도 핸드캐리로 가져가야 함<br>
+인천공항·싱가포르 면세 모두 OK (밀봉된 상태)</p>
+<p><strong>🚫 기항지 구매 술</strong></p>
+<p>변경: 기항지에서 산 술은 하선까지 보관<br>
+이전에 객실로 반입 가능했으나 6/3 이후 불가<br>
+싱가포르 출항 항차는 기항지가 없음 → 영향 없음</p>
+<p><strong>💰 코키지 fee 인하</strong></p>
+<p>$29 → $20 (식당 반입 시)<br>
+와인 패키지로 산 와인은 코키지 없음</p>
+</div></details>
 </div></details>
 
 </section></main>
@@ -245,11 +281,262 @@ const day4Kids=[['Starters (에피타이저)',[
 ['Selection of Assorted Ice Cream','아이스크림 선택','','다양한 아이스크림 선택 가능']
 ]]];
 
+
+
+
+const roomBreakfast=[['Juices',[
+['Orange','오렌지','',''],
+['Apple','사과','',''],
+['Grapefruit','자몽','','']
+]],['Breads & Pastries',[
+['Fresh Fruit Bowl','신선한 과일 보울','',''],
+['Danish Pastries','데니쉬 페이스트리','',''],
+['Assortment of Muffins','머핀 모음','',''],
+['Croissants','크루아상','',''],
+['Doughnuts','도넛','',''],
+['White Toast','흰빵 토스트','',''],
+['Whole Wheat Toast','통밀 토스트','',''],
+['English Muffins','잉글리시 머핀','',''],
+['Bagel','베이글','','']
+]],['Condiments',[
+['Selection of Jams and Honey','잼·꿀 모음','',''],
+['Margarine','마가린','',''],
+['Butter','버터','',''],
+['Cream Cheese','크림 치즈','','']
+]],['Cold Cereals',[
+['Rice Krispies','라이스 크리스피','',''],
+['Corn Flakes','콘 플레이크','',''],
+['Frosties','프로스티스','',''],
+['Froot Loops','프룻 룹스','',''],
+['Granola','그래놀라','',''],
+['Coco Crunch','코코 크런치','','']
+]],['Beverages',[
+['Hot Chocolate','핫초코','',''],
+['Lowfat Milk','저지방 우유','',''],
+['Whole Milk','전유','',''],
+['Chocolate Milk','초콜릿 우유','','']
+]]];
+
+const roomService24h=[['Entrées (메인)',[
+['All Hands on Deck','올 핸즈 온 덱','A Special Selection of International Cheeses served with Crackers featuring Mini Babybel Snack Cheese / 다양한 국제 치즈 모듬, 크래커, 미니 베이비벨 스낵 치즈','다양한 국제 치즈를 한 접시에 모은 치즈 플래터입니다. 크래커와 미니 베이비벨이 함께 제공됩니다.'],
+['Chicken Wonton Noodle Soup','치킨 완탕 누들 수프','Mushrooms, Green Onions, Bok Choy, Cucumber-Radish Salad / 버섯, 쪽파, 청경채, 오이-무 샐러드','완탕은 얇은 피에 다진 고기를 넣은 광둥식 만두입니다. 닭 육수에 치킨 완탕과 누들을 넣고 버섯·쪽파·청경채를 곁들였으며, 오이-무 샐러드가 함께 제공됩니다.'],
+['Rasam Indian Tomato Soup','라삼 인도식 토마토 수프','Basmati Rice / 바스마티 라이스','라삼(Rasam)은 타마린드·후추·토마토를 베이스로 한 남인도 전통 수프입니다. 바스마티 쌀과 함께 제공됩니다.'],
+['Pennette Bolognaise','페네 볼로네제','Penne Pasta tossed in a Rich Bolognaise Sauce, Parmigiano-Reggiano Cheese, Garlic Crostini / 진한 볼로네제 소스에 버무린 페네 파스타, 파르미지아노 레지아노 치즈, 마늘 크로스티니','볼로네제 소스는 이탈리아 볼로냐 지방의 다진 고기·토마토 베이스 라구 소스입니다. 페네 파스타에 버무리고 파르미지아노 치즈와 마늘 크로스티니를 곁들였습니다.'],
+['Grilled Angus American Cheeseburger','그릴드 앵거스 아메리칸 치즈버거','Toasted Brioche Bun, Iceberg Lettuce, Vidalia Onions, Tomato, Dill Pickle, Vegetable Chips / 토스트된 브리오슈 번, 아이스버그 양상추, 비달리아 양파, 토마토, 딜 피클, 야채 칩','앵거스 비프 패티에 아메리칸 스타일 토핑을 올린 클래식 치즈버거입니다. 야채 칩이 곁들여집니다.'],
+['Crisp Breaded Chicken Tenders','바삭한 빵가루 치킨 텐더','Kewpie Yuzu-Mayonnaise, Cucumber, Soy-Ginger Garlic Salad / 큐피 유자 마요네즈, 오이, 간장-생강 마늘 샐러드','닭가슴살의 부드러운 안심 부위에 빵가루를 입혀 튀긴 미국식 메뉴입니다. 큐피 유자 마요네즈와 간장-생강 마늘 샐러드가 곁들여집니다.'],
+['Dan-Dan Noodles','단단면','Wheat Noodles, Ground Pork, Sichuan Pepper, Mustard Greens, Scallions, Cucumber-Radish Salad / 밀 누들, 다진 돼지고기, 사천 후추, 갓, 쪽파, 오이-무 샐러드','단단면은 사천 지역의 매운 면 요리로, 행상이 짊어지던 멜대에서 이름이 유래했습니다. 밀 누들에 다진 돼지고기와 사천 후추로 매콤하게 양념합니다.'],
+['Dal Makhani','달 마카니','Slow-cooked Lentil Curry, Paratha Roti, Cucumber Raita / 천천히 끓인 렌틸 커리, 파라타 로티, 오이 라이타','달 마카니는 검은 렌틸·강낭콩을 버터·크림과 함께 천천히 끓이는 인도 북부 채식 요리입니다. 파라타와 오이 라이타가 곁들여집니다.'],
+['Grilled Salmon Salad','그릴드 연어 샐러드','Crisp Romaine, Iceberg Lettuce, Cherry Tomatoes, Vidalia Onions, Cucumber, Apple-Cranberry Kasha, Honey Dijon Dressing / 로메인, 아이스버그 양상추, 체리 토마토, 비달리아 양파, 오이, 사과-크랜베리 카샤, 허니 디종 드레싱','그릴에 구운 연어를 양상추와 채소와 함께 낸 메인 샐러드입니다. 카샤는 메밀로 만든 동유럽 곡물 요리이며, 허니 디종 드레싱이 곁들여집니다.']
+]],['Desserts (디저트)',[
+['New York Cheesecake','뉴욕 치즈케이크','Raspberry Ganache, Whipped Cream / 라즈베리 가나슈, 휘핑크림','뉴욕 치즈케이크는 크림 치즈를 듬뿍 사용해 묵직하고 진한 식감이 특징인 미국식 치즈케이크입니다. 라즈베리 가나슈와 휘핑크림이 곁들여집니다.'],
+['Chocolate Truffle Cake','초콜릿 트러플 케이크','Chocolate Brownie, Truffle Mousse, Chocolate-Hazelnut Spread / 초콜릿 브라우니, 트러플 무스, 초콜릿-헤이즐넛 스프레드','트러플은 가나슈를 동글게 빚은 초콜릿 모양을 뜻합니다. 초콜릿 브라우니 위에 트러플 무스를 올리고 초콜릿-헤이즐넛 스프레드를 곁들였습니다.']
+]],['Zero Proof (논알콜)',[
+["Lyre's Amalfi Spritz",'라이어스 아말피 스프리츠','$7.75',''],
+['Heineken 0.0%','하이네켄 0.0%','$7.75',''],
+['Warsteiner Radler 0.0%','바르슈타이너 라들러 0.0%','$7.75',''],
+['Missing Thorn Zero Proof — Sparkling','미싱 쏜 제로 프루프 — 스파클링','$14.00',''],
+['Missing Thorn Zero Proof — White','미싱 쏜 제로 프루프 — 화이트','$14.00',''],
+['Missing Thorn Zero Proof — Red','미싱 쏜 제로 프루프 — 레드','$14.00',''],
+['NON1 Salted Raspberry & Chamomile','NON1 솔티드 라즈베리 & 카모마일','$15.00',''],
+['NON2 Caramelized Pear & Kombu','NON2 캐러멜라이즈드 페어 & 다시마','$15.00','']
+]],['Beers & Seltzers',[
+['Kronenbourg 1664 Blanc','크로넨부르 1664 블랑','$7.75',''],
+['Tiger Lager','타이거 라거','$7.75',''],
+['Kronenbourg 1664 Lager','크로넨부르 1664 라거','$7.75',''],
+["Jing-A Worker's Pale Ale",'징에이 워커스 페일 에일','$7.75',''],
+['Jing-A Mandarin Wheat','징에이 만다린 위트','$7.75',''],
+['Brooklyn Lager','브루클린 라거','$7.75',''],
+['Brooklyn Defender IPA','브루클린 디펜더 IPA','$7.75',''],
+['Peroni Lager','페로니 라거','$7.75',''],
+['Hoegaarden Witbier','호가든 비트비어','$7.75',''],
+['Stella Artois Lager','스텔라 아르투아 라거','$7.75',''],
+['Guinness Stout','기네스 스타우트','$7.75',''],
+['Budweiser','버드와이저','$7.75',''],
+['Somersby Apple Cider','서머스비 애플 사이다','$7.75','']
+]],["Barista's Favorites",[
+['Espresso','에스프레소','Single $3.00 / Double $4.00',''],
+['Macchiato','마키아토','Single $3.00 / Double $4.00',''],
+['Mocha','모카','Single $3.75 / Double $5.00',''],
+['Cappuccino','카푸치노','Single $3.75 / Double $5.00',''],
+['Add Flavor','플레이버 추가','$1.25','']
+]],['Sparkling & Champagne',[
+['Comtesse de Malet (Bordeaux, France)','콩테스 드 말레 (프랑스 보르도)','$13.00',''],
+['Borgo Imperiale Moscato Dolce (Italy)','보르고 임페리알레 모스카토 돌체 (이탈리아)','$9.00',''],
+['Borgo Imperiale Prosecco (Italy)','보르고 임페리알레 프로세코 (이탈리아)','$10.00','']
+]],['White Wine',[
+['Calabria Family Pinot Grigio (Australia)','칼라브리아 패밀리 피노 그리지오 (호주)','$10.00',''],
+['Moon Rosé (Provence, France)','문 로제 (프랑스 프로방스)','$12.00',''],
+['Spy Valley Sauvignon Blanc (New Zealand)','스파이 밸리 소비뇽 블랑 (뉴질랜드)','$13.00',''],
+['Bliss Vineyard Chardonnay (USA)','블리스 빈야드 샤도네이 (미국)','$14.00','']
+]],['Red Wine',[
+['Un Mundo Chiquito Malbec (Argentina)','운 문도 치키토 말벡 (아르헨티나)','$10.00',''],
+['Spy Valley Pinot Noir (New Zealand)','스파이 밸리 피노 누아 (뉴질랜드)','$12.00',''],
+['Thorn-Clarke Shiraz (Barossa, Australia)','쏜-클라크 쉬라즈 (호주 바로사)','$15.00','']
+]],['Sake & Plum Wine',[
+['Gekkeikan Plum Wine','게케이칸 매실주','$11.00',''],
+['Gekkeikan Kanjuku Umeshu Genshu','게케이칸 칸주쿠 우메슈 겐슈','$12.00','']
+]]];
+
+const quickPizzaPlanet=[['Pizza',[
+['Cheese Pizza 👍👍','치즈 피자','Mozzarella, San Marzano Tomato Sauce / 모짜렐라, 산 마르자노 토마토 소스','모짜렐라 치즈와 산 마르자노 토마토 소스(나폴리 인근 캄파니아 지역에서 자란 DOP 인증 토마토)로 만든 클래식 치즈 피자입니다.'],
+['Pepperoni Pizza 👍👍','페퍼로니 피자','San Marzano Tomato Sauce, Pepperoni, Mozzarella, Basil / 산 마르자노 토마토 소스, 페퍼로니, 모짜렐라, 바질','페퍼로니는 미국식 살라미로, 돼지·소고기에 파프리카·고추를 섞어 매콤하게 양념해 건조 숙성한 소시지입니다. 산 마르자노 토마토 소스 위에 페퍼로니·모짜렐라·바질을 올린 피자입니다.']
+]]];
+
+const quickGrammaTala=[['Entrées',[
+['Hainanese Chicken','하이난 치킨','','하이난 치킨은 닭을 삶아낸 후 그 육수로 지은 밥과 함께 내는 싱가포르·말레이시아 요리입니다.'],
+['Huli-Huli BBQ Chicken 👍','훌리훌리 BBQ 치킨','','훌리훌리는 하와이어로 뒤집고 뒤집는다는 뜻으로, 닭을 회전 그릴에 굽는 1950년대 하와이 전통 바비큐 방식입니다. 간장·생강·파인애플 등으로 양념합니다.'],
+['Black Pepper Beef 👍','블랙 페퍼 비프','','블랙 페퍼 비프는 흑후추를 듬뿍 사용해 볶아낸 광둥식 소고기 요리입니다.'],
+['Sichuan Braised Tofu','사천식 두부 조림','','마파두부 등으로 알려진 중국 사천 지역의 매운 두부 요리 계열입니다. 두반장·고추기름으로 매콤하게 조립니다.'],
+['Broccoli with Garlic 👍','마늘 브로콜리','','마늘로 향을 낸 볶은 브로콜리 사이드 메뉴입니다.'],
+['Soy Glazed Yams','간장 글레이즈 얌','','얌(고구마류 뿌리채소)을 간장 베이스 글레이즈로 윤기 나게 조린 요리입니다.'],
+['Fragrant Chicken Rice','프래그런트 치킨 라이스','','닭 육수로 지은 향긋한 쌀밥입니다.'],
+['Malaysian Coconut Rice','말레이시아식 코코넛 라이스','','나시 르막(Nasi Lemak)이라 불리는 말레이시아 전통 메뉴로, 쌀을 코코넛 밀크에 지어 향과 단맛을 더한 밥입니다.'],
+['Buttermilk Fried Chicken 👍','버터밀크 프라이드 치킨','','버터밀크(약간 신맛 도는 발효 유제품)에 재워 부드럽게 만든 닭고기를 튀긴 미국 남부식 프라이드 치킨입니다.'],
+['Chicken Tenders','치킨 텐더','','닭가슴살의 부드러운 안심 부위에 빵가루를 입혀 튀긴 미국식 메뉴입니다.'],
+['French Fries','프렌치 프라이','','감자튀김.']
+]],['Accompaniments',[
+['Chili-Garlic Paste','칠리-마늘 페이스트','',''],
+['Ginger-Scallion Paste','생강-쪽파 페이스트','','하이난 치킨 라이스 등에 곁들이는 광둥식 소스입니다.'],
+['Kimchi','김치','',''],
+['Macaroni Salad','마카로니 샐러드','','하와이 도시락(Plate Lunch)에 흔히 곁들여지는 마요네즈 베이스 마카로니 샐러드입니다.'],
+['Pickled Radish','피클드 무','',''],
+['Red Ginger','레드 진저','','가리(Gari) 또는 베니쇼가(紅生姜)라 불리는 분홍빛 절인 생강입니다.'],
+['Shredded Cabbage','채 썬 양배추','',''],
+['Sliced Cucumber','슬라이스 오이','','']
+]]];
+
+const quickMowgli=[['Build Your Own Bowl or Platter',[
+['Tandoori Chicken 👍','탄두리 치킨','','탄두르(Tandoor)는 인도 펀자브 지역의 원통형 점토 화덕으로, 닭을 요거트·향신료에 재운 후 꼬치에 꽂아 고온에 굽는 요리입니다.'],
+['Tandoori Lamb Hariyali','탄두리 램 하리얄리','','하리얄리(Hariyali)는 힌디어로 녹색이라는 뜻으로, 고수·민트·시금치 등 녹색 향신료에 양고기를 재워 탄두르에 구운 메뉴입니다.'],
+['Butter Chicken 👍','버터 치킨','','무르그 마카니라고도 불리며, 1950년대 델리에서 유래한 토마토·크림·버터 베이스의 부드러운 북인도 커리입니다.'],
+['Kerala Fish Curry','케랄라 피쉬 커리','','인도 남부 케랄라 지방의 코코넛 밀크·타마린드를 사용한 생선 커리입니다.'],
+['Tandoori Vegetable Momos','탄두리 야채 모모','','모모(Momos)는 네팔·티베트·인도 북동부의 만두로, 야채 모모를 탄두르에 구워낸 메뉴입니다.']
+]],['Breads, Accompaniments, Sides',[
+['Chutneys, Crisp Naans, Raitas, Fragrant Rice, Soft Paratha, Pulao','처트니, 바삭한 난, 라이타, 향긋한 라이스, 부드러운 파라타, 풀라오','Variety of Richly Spiced Slow Cooked Vegetarian Dishes / 다양한 향신료로 천천히 익힌 채식 요리','난(인도식 화덕에 구운 납작빵), 파라타(층층이 구운 납작빵), 풀라오(향신료 밥), 라이타(요거트 소스), 처트니(인도식 잼·소스) 등이 제공됩니다.']
+]]];
+
+const quickStitch=[['Burgers & Sandwiches',[
+['Gochujang Burger 👍👍','고추장 버거','Grilled Angus Beef Burger, Toasted Brioche Bun, Grilled Portobello Mushrooms, Red Ginger, Kimchi, Crisp Onions, Gochujang Mayonnaise / 앵거스 비프 패티, 토스트된 브리오슈 번, 그릴 포토벨로 버섯, 절인 생강, 김치, 바삭한 양파, 고추장 마요네즈','한국식 고추장을 마요네즈에 섞어 발라낸 한식 퓨전 버거입니다. 앵거스 비프 패티, 포토벨로 버섯, 김치, 절인 생강이 들어갑니다.'],
+['Barbecue Huli-Huli Pulled Pork','훌리훌리 풀드 포크','Crisp Onion Rings, Grilled Pineapple, Hawaiian Sweet Roll / 바삭한 어니언 링, 구운 파인애플, 하와이안 스위트 롤','훌리훌리는 하와이 전통 회전 그릴 바비큐 방식입니다. 그 양념으로 조리한 풀드 포크와 구운 파인애플을 곁들여 하와이안 스위트 롤에 끼운 샌드위치입니다.'],
+['The Classic','클래식 치즈버거','Grilled Angus Cheeseburger, Crisp Iceberg Lettuce, Tomatoes, Pickles, American Cheddar, Sesame Brioche Bun / 앵거스 치즈버거, 아이스버그 양상추, 토마토, 피클, 아메리칸 체더, 참깨 브리오슈 번','앵거스 비프 패티에 아메리칸 체더, 양상추, 토마토, 피클을 깨가 뿌려진 브리오슈 번에 끼운 미국식 클래식 치즈버거입니다.'],
+['The 626','The 626 (치킨 샌드위치)','Buttermilk-marinated Spice-Fried Chicken, Crisp Iceberg Lettuce, Tomatoes, Dill Ranch Sauce, Soft Sweet Potato Bun / 버터밀크에 재운 향신료 치킨, 아이스버그 양상추, 토마토, 딜 랜치 소스, 고구마 번','626은 영화 릴로 & 스티치에서 스티치의 실험체 번호입니다. 버터밀크에 재워 향신료를 입혀 튀긴 치킨에 딜 랜치 소스를 발라 고구마 번에 끼운 치킨 샌드위치입니다.'],
+['All Beef Hot Dog or Bratwurst 👍👍','비프 핫도그 또는 브라트부어스트 (김치핫도그 가능!)','Pretzel Hoagie with Kimchi and Kewpie-Wasabi Mayonnaise / 프레첼 호기 번, 김치, 큐피 와사비 마요네즈','브라트부어스트는 독일식 굵은 소시지입니다. 비프 핫도그 또는 브라트부어스트 중 선택할 수 있으며, 프레첼 반죽으로 만든 호기 번에 김치와 큐피·와사비 마요네즈를 곁들였습니다.'],
+['Black and Blue Burger','블랙 앤 블루 버거','Cajun-blackened Angus Beef Burger, Toasted Brioche Bun, Blue Cheese, Crisp Iceberg Lettuce, Pickled Red Onions, Chive Aioli / 케이준 양념 앵거스 비프 패티, 브리오슈 번, 블루 치즈, 양상추, 피클드 적양파, 차이브 아이올리','블랙 앤 블루는 케이준 향신료로 검은 껍질을 만든 패티와 블루 치즈를 함께 쓴 메뉴를 일컫는 미국식 표현입니다. 앵거스 비프 패티에 블루 치즈, 피클드 적양파, 차이브 아이올리가 들어갑니다.'],
+['Impossible Burger','임파서블 버거','Tarragon Aioli, Shallot Jam, Toasted Wheat Bun / 타라곤 아이올리, 샬롯 잼, 통밀 번','Impossible Foods의 식물성 패티를 사용한 채식 버거입니다. 타라곤 아이올리와 샬롯 잼이 곁들여집니다.']
+]]];
+
+const quickCosmic=[['Build Your Own Bowl or Platter',[
+['Grilled Kebabs 👍','그릴드 케밥','','케밥(Kebab)은 고기를 꼬치에 꿰어 굽는 중동·튀르키예 전통 요리입니다.'],
+['Shawarma','샤와르마','','샤와르마(Shawarma)는 양념한 고기를 수직 꼬치에 꽂아 회전시키며 굽는 중동식 조리법입니다.'],
+['Vegetable Shish','야채 쉬시 케밥','','쉬시(Şiş)는 튀르키예어로 꼬챙이를 뜻하며, 채소를 꼬치에 꿰어 굽는 채식 케밥입니다.'],
+['Char-grilled Spiced Sausage','향신료 그릴드 소시지','','향신료로 양념한 소시지를 직화 그릴에 구운 메뉴입니다.'],
+['Falafel','팔라펠','','팔라펠(Falafel)은 으깬 병아리콩 또는 잠두콩을 향신료와 섞어 동글게 빚은 후 튀긴 중동의 채식 요리입니다.']
+]],['Breads, Accompaniments, Sides',[
+['Hummus, Pickled Red Cabbage, Tabbouleh Salad, Baba Ghanoush, Sumac Red Onion, Soft Pita, Seasoned French Fries','후무스, 피클드 적채, 타불레 샐러드, 바바 가누쉬, 수막 적양파, 부드러운 피타, 양념 감자튀김','','후무스는 병아리콩·타히니 베이스의 중동 딥, 타불레는 파슬리·불구르·토마토·민트를 섞은 레반트 지역 샐러드, 바바 가누쉬는 가지를 구워 으깬 딥입니다. 수막은 중동산 신맛 향신료입니다.']
+]]];
+
+const conciergeBreakfast=[['CONCIERGE MORNING MENU',[
+['Raspberry-Chocolate Croissant','라즈베리-초콜릿 크루아상','Cream Cheese / 크림 치즈','라즈베리와 초콜릿을 넣은 크루아상에 크림 치즈를 곁들였습니다.'],
+['Breakfast Sandwich','브렉퍼스트 샌드위치','Caramelized Bourbon-Bacon, Heirloom Tomatoes, Fried Egg, Smoked Gouda Cheese, Toasted Whole Grain-Seeded Bread / 캐러멜라이즈드 버번 베이컨, 헤리티지 토마토, 후라이드 에그, 스모크 고다 치즈, 통밀-씨앗 토스트','버번으로 캐러멜라이즈한 베이컨, 토마토, 후라이드 에그, 스모크 고다 치즈를 통밀-씨앗 토스트에 끼운 브렉퍼스트 샌드위치입니다.'],
+['Siu Mai','시우마이','Chicken Dumpling with Tobiko / 닭채살을 올린 치킨 만두','시우마이(燒賣)는 윗부분이 트인 광둥식 만두입니다. 닭고기로 만든 시우마이 위에 날치알(토비코)을 올렸습니다.'],
+['Avocado Toast','아보카도 토스트','Avocado, Strawberry, Melted Goat Cheese on Gluten-free Rye Bread / 아보카도, 딸기, 녹인 염소 치즈, 글루텐프리 호밀빵','글루텐프리 호밀빵 위에 아보카도와 딸기, 녹인 염소 치즈를 올린 토스트입니다.'],
+['Poached Cage-free Egg on Toasted English Muffin','잉글리시 머핀 포치드 에그','Rosemary Ham and Hollandaise Sauce / Or / Sliced Smoked Salmon, Hollandaise Sauce, Osetra Caviar / 로즈마리 햄+홀랜다이즈 / 또는 훈제 연어, 홀랜다이즈, 오세트라 캐비어','토스트한 잉글리시 머핀 위에 수란을 올리고 홀랜다이즈 소스를 끼얹은 에그 베네딕트 스타일입니다. 로즈마리 햄 또는 훈제 연어+오세트라 캐비어 중 선택할 수 있습니다.'],
+['Fish Ball Noodle Soup','피쉬볼 누들 수프','Kway Teow, Fish Balls / 쌀국수(케이띠우), 어묵','케이띠우(Kway Teow)는 동남아에서 즐겨 먹는 납작한 쌀국수입니다. 어묵(피쉬볼)을 곁들인 국물 쌀국수입니다.']
+]],['FOR CHILDREN OF ALL AGES (어린이용)',[
+['Mickey Waffle','미키 와플','with Whipped Cream, Strawberry Compote, and Cinnamon Sugar / 휘핑크림, 딸기 콤포트, 시나몬 슈가','미키 모양의 와플 위에 휘핑크림, 딸기 콤포트, 시나몬 슈가를 곁들였습니다.'],
+['French Toast Roll-Ups','프렌치 토스트 롤업','Filled with Raspberry Jam and Buttercream / 라즈베리 잼과 버터크림 충전','프렌치 토스트를 돌돌 말아 라즈베리 잼과 버터크림을 채운 메뉴입니다.']
+]]];
+
+const conciergeLunch=[['AFTERNOON MENU',[
+['Truffle Mushroom Linguine','트러플 머쉬룸 링귀니','Tempura Shiitake, Fava Beans, Parmigiano-Reggiano / 튀김 표고, 잠두, 파르미지아노 레지아노','트러플 향을 더한 머쉬룸 링귀니 파스타입니다. 튀긴 표고버섯, 잠두콩, 파르미지아노 레지아노 치즈가 들어갑니다.'],
+['Gambas Pil Pil','감바스 알 아히요','Sauteed Garlic Shrimp, Piquin Chili, Pimento / 마늘 새우 소테, 피킨 칠리, 피멘토(스모크 파프리카)','감바스 필 필은 스페인 바스크 지방의 마늘 새우 요리입니다. 마늘을 듬뿍 넣은 올리브유에 새우를 익히고, 피킨 칠리와 피멘토를 곁들여 매콤하고 향긋한 풍미가 가득합니다.'],
+['Roasted Aubergine and Zucchini','구운 가지·주키니','Filled with Ricotta Cheese, Sun-dried Tomatoes, and Basil / 리코타 치즈, 선드라이 토마토, 바질 충전','구운 가지와 주키니 안에 리코타 치즈, 선드라이 토마토, 바질을 채워 만든 채식 메뉴입니다.'],
+['Prosciutto Panini','프로슈토 파니니','Swiss Cheese, Mozzarella, Vine Tomatoes, Basil Dressing, Country Chia Seed Bread / 스위스 치즈, 모짜렐라, 바인 토마토, 바질 드레싱, 컨트리 치아씨드 빵','프로슈토 이탈리아식 생햄입니다. 프로슈토, 스위스 치즈, 모짜렐라, 바인 토마토를 컨트리 치아씨드 빵 사이에 끼우고 바질 드레싱을 더한 이탈리아식 파니니입니다.'],
+['All American Sliders','올 아메리칸 슬라이더','Seared Angus Beef, Crisp Escarole Greens, Sliced Tomato, Red Onion, Pickles, Smoked Cheddar Cheese, Brioche Bun / 구운 앵거스 비프, 에스카롤, 토마토, 적양파, 피클, 스모크 체더, 브리오슈 번','슬라이더는 미니 사이즈의 작은 햄버거입니다. 앵거스 비프 패티에 에스카롤(상추 일종), 토마토, 적양파, 피클, 스모크 체더를 브리오슈 번에 끼웠습니다.']
+]],['FOR CHILDREN OF ALL AGES (어린이용)',[
+['Fish and Chips','피쉬 앤 칩스','Tartar Sauce / 타르타르 소스','튀긴 흰살생선과 감자튀김에 타르타르 소스를 곁들인 영국식 메뉴입니다.']
+]]];
+
+const conciergeSundeck=[['CONCIERGE SUN DECK',[
+['Tandoori Chicken Wings','탄두리 치킨 윙','with Tandoori Masala Fries and Citrus Aioli / 탄두리 마살라 프라이, 시트러스 아이올리','탄두리는 인도 전통의 점토 가마(탄두르)에서 굽는 조리법으로, 양념에 재운 닭날개를 구워냅니다. 탄두리 향신료로 양념한 감자튀김과 시트러스 아이올리 소스를 곁들였습니다.'],
+['Paneer Tikka Kebab','파니르 티카 케밥','with Cilantro-Jalapeño Dip / 실란트로-할라피뇨 딥','파니르는 인도식 코티지 치즈, 티카는 큐브 모양으로 양념해 굽는 인도 조리법입니다. 양념한 파니르 큐브를 꼬치에 끼워 구운 채식 케밥에 실란트로(고수)-할라피뇨 딥을 곁들였습니다.'],
+['All American Classic Burger','올 아메리칸 클래식 버거','Seared Angus Beef, Crisp Escarole Greens, Sliced Tomato, Red Onion, Pickles, Smoked Cheddar Cheese, Brioche Bun / 구운 앵거스 비프, 에스카롤, 토마토, 적양파, 피클, 스모크 체더, 브리오슈 번','구운 앵거스 비프 패티에 에스카롤(상추 일종), 토마토, 적양파, 피클, 스모크 체더 치즈를 브리오슈 번에 끼운 미국식 클래식 햄버거입니다.'],
+['Half Pint of Prawns','하프 파인트 프라운','Lemon, Aioli, Marie Rose / 레몬, 아이올리, 마리 로즈 소스','하프 파인트(약 285ml) 분량의 새우(prawn)에 레몬, 아이올리(마늘 마요), 마리 로즈 소스를 곁들였습니다. 마리 로즈는 마요네즈에 케첩을 섞은 영국식 씨푸드 소스입니다.'],
+['Sun Deck Salad','선덱 샐러드','Seasonal Greens, Carrots, Radishes, Cucumbers, Tomatoes, Shallot-Dijon Mustard Vinaigrette / 계절 채소, 당근, 무, 오이, 토마토, 샬롯-디종 머스타드 비네그레트','계절 채소, 당근, 무, 오이, 토마토에 샬롯-디종 머스타드 비네그레트 드레싱을 곁들인 그린 샐러드입니다.']
+]],['COLD SIDES (콜드 사이드)',[
+['Kachumber Salad, Red Onion Salad, Cucumber Raita, Mango Chutney','카춤버 샐러드, 적양파 샐러드, 오이 라이타, 망고 처트니','','인도식 사이드 모음: 카춤버(토마토·오이·양파 다진 인도 샐러드), 적양파 샐러드, 라이타(요거트 베이스 소스), 망고 처트니(망고로 만든 인도식 잼)입니다.']
+]],['HOT SIDES (핫 사이드)',[
+['Plain Naan, Garlic Naan, Truffle Fries','플레인 난, 갈릭 난, 트러플 프라이','','난은 인도식 화덕(탄두르)에 굽는 빵입니다. 플레인 난과 갈릭 난, 그리고 트러플 향을 입힌 감자튀김입니다.']
+]]];
+
+const conciergeHollywood=[['Small Plates (에피타이저)',[
+['Dill-marinated Shrimp','딜 마리네이드 새우','Green Asparagus, Horseradish Cream, Marie Rose, Micro Celery / 그린 아스파라거스, 호스래디시 크림, 마리 로즈 소스, 마이크로 셀러리','딜에 절인 새우 요리입니다. 마리 로즈 소스는 마요네즈에 케첩·우스터소스를 섞은 영국식 칵테일 소스입니다. 호스래디시(서양 고추냉이) 크림과 함께 냅니다.'],
+['Beef Teriyaki Bao','소고기 데리야키 바오','Cucumber, Gochujang Hoisin Sauce / 오이, 고추장 호이신 소스','바오(包)는 중국식 찐빵으로, 부드러운 흰빵 사이에 속재료를 끼운 형태입니다. 데리야키 소스로 양념한 소고기를 채우고, 한국식 고추장과 중국식 호이신 소스를 섞은 매콤달콤한 소스를 곁들입니다.'],
+['Tom Kha Soup','톰카 수프','Chicken Galangal, Lemon Grass, Coconut Milk / 치킨, 갈랑갈, 레몬그라스, 코코넛 밀크','톰카(ข่า)는 태국 전통 코코넛 밀크 베이스의 수프입니다. 갈랑갈(태국 생강), 레몬그라스와 함께 끓이며 닭고기를 사용했습니다. 톰얌과 달리 매운맛보다 부드럽고 향긋한 맛이 특징입니다.'],
+['Mixed Salad','믹스드 샐러드','Iceberg Lettuce, Spinach, Cherry Tomatoes, Cucumbers, Red Onions, Carrots, Daikon with a choice of Dressing: Raspberry, Balsamic, Ranch, or Italian Vinaigrette / 아이스버그 양상추, 시금치, 체리 토마토, 오이, 적양파, 당근, 무 — 드레싱 선택: 라즈베리 / 발사믹 / 랜치 / 이탈리안 비네그레트','여러 가지 채소를 섞은 가든 샐러드입니다. 일본·한국식 무(Daikon)가 들어가 아삭한 식감을 더합니다. 드레싱은 라즈베리(과일 베이스), 발사믹(이탈리아 식초), 랜치(미국식 크리미), 이탈리안 비네그레트 중 선택할 수 있습니다.']
+]],['Entrées (메인)',[
+['Pennette Pasta','페네트 파스타','Tomato-Basil Provencal Sauce, Goat Cheese, Spinach Pesto / 토마토 바질 프로방살 소스, 염소 치즈, 시금치 페스토','페네트는 펜네보다 가늘고 짧은 파스타입니다. 프랑스 남부 프로방스식 토마토·바질 소스에 염소 치즈와 진한 시금치 페스토(이탈리아식 허브 소스)를 곁들였습니다.'],
+['Chicken Caesar Salad','치킨 시저 샐러드','Thyme-marinated Roasted Chicken Breast, Crisp Romaine Leaves, Creamy Caesar Dressing, Sea Salt Croutons, Shaved Parmesan / 타임 마리네이드 로스트 치킨 가슴살, 아삭한 로메인, 시저 드레싱, 바다 소금 크루통, 파마산 쉐이빙','타임에 절여 구운 닭가슴살을 올린 클래식 시저 샐러드입니다. 로메인 양상추 위에 크리미 시저 드레싱을 끼얹고 바다 소금 크루통과 얇게 깎은 파마산 치즈를 뿌립니다.'],
+['Plant-Based Soba Noodle Bowl','식물성 소바 누들 볼','Miso, Ginger, Soybeans, Tempeh, Bok Choy, Green Onion, Carrots, Lemon Grass, Chili-Cilantro Avocado Oil / 미소, 생강, 콩, 템페, 청경채, 쪽파, 당근, 레몬그라스, 칠리-실란트로 아보카도 오일','일본식 메밀국수(소바)를 베이스로 한 채식 누들 볼입니다. 미소(일본 된장)와 생강 베이스 국물에 템페(인도네시아 콩 발효 식품), 콩, 청경채, 쪽파, 당근, 레몬그라스를 더하고 칠리·실란트로 아보카도 오일로 마무리합니다.'],
+['Brinjal Bhaji Aubergine Curry','브린잘 바지 가지 커리','Fragrant Jasmine Rice, Green Herb Chutney, Raita, Poppadum / 향긋한 자스민 라이스, 그린 허브 처트니, 라이타, 파파둠','브린잘은 인도식 가지를 가리키며, 바지는 인도식 채소 요리/커리를 뜻합니다. 가지로 만든 인도식 커리에 자스민 라이스, 그린 허브 처트니, 라이타, 파파둠이 함께 나옵니다.'],
+['Poached Lobster Tail Salad','포치드 랍스터 테일 샐러드','Spinach, Escarole, Arugula Leaves, Avocado, Fingerling Potatoes, Asparagus, Shallot, Lemon, Flat-leaf Parsley Dressing / 시금치, 에스카롤, 루콜라, 아보카도, 핑거링 감자, 아스파라거스, 샬롯, 레몬, 이탈리안 파슬리 드레싱','랍스터 꼬리살을 포칭한 샐러드입니다. 시금치, 에스카롤, 루콜라를 베이스로 하고 아보카도, 핑거링 감자, 아스파라거스가 함께 들어가며 샬롯·레몬·이탈리안 파슬리 드레싱으로 마무리합니다.'],
+['Roasted Beef Tenderloin','로스트 비프 안심','Sauteed Wild Mushrooms, Parsnip Puree, Cabernet Wine Black Truffle Reduction, Crispy Celeriac Chips / 소테드 와일드 버섯, 파스닙 퓌레, 카베르네 와인 블랙 트러플 리덕션, 바삭한 셀러리악 칩','소 안심을 구운 클래식 메인 요리입니다. 버터에 볶은 야생 버섯, 파스닙 퓌레, 카베르네 와인을 졸여 블랙 트러플을 더한 리덕션 소스, 바삭하게 튀긴 셀러리악 칩을 곁들였습니다.']
+]],['Desserts (디저트)',[
+['Mango Cheesecake','망고 치즈케이크','Continental Vanilla Cheesecake, Mango Compote, Coconut Macaroon / 컨티넨탈 바닐라 치즈케이크, 망고 콤포트, 코코넛 마카롱','바닐라 풍미 치즈케이크에 망고 콤포트와 코코넛 마카롱을 곁들였습니다.'],
+['Chocolate-Hazelnut Molten Cake','초콜릿 헤이즐넛 몰튼 케이크','Double Chocolate Sauce, Chocolate Soil, Hazelnut Gelato / 더블 초콜릿 소스, 초콜릿 소일, 헤이즐넛 젤라토','몰튼 케이크는 따뜻한 초콜릿 케이크에 초콜릿 소스를 두 가지 더했습니다. 초콜릿 소일과 함께 헤이즐넛 젤라토가 곁들여집니다.'],
+['Carrot Cake','당근 케이크','Lemon-Cream Cheese Frosting / 레몬-크림치즈 프로스팅','당근을 갈아 넣은 미국식 케이크입니다. 레몬을 더한 크림치즈 프로스팅으로 새콤한 향을 더합니다.'],
+['Welcome Aboard Sundae','웰컴 어보드 선데이','Coconut Ice Cream, Mango, Lychee, Pineapple, Raspberry Sauce, Whipped Cream / 코코넛 아이스크림, 망고, 리치, 파인애플, 라즈베리 소스, 휘핑크림','선데이는 시럽·과일·휘핑크림을 곁들인 아이스크림 디저트입니다. 코코넛 아이스크림에 망고·리치·파인애플 열대 과일을 올리고 라즈베리 소스와 휘핑크림으로 마무리한 승선 환영 메뉴입니다.']
+]],['No Sugar Added Desserts (무설탕 디저트)',[
+['Coffee Cream Dome','커피 크림 돔','Ladyfingers, Kahlúa Espresso, Mascarpone Cheese / 레이디핑거, 칼루아 에스프레소, 마스카포네 치즈','돔(반구) 모양의 티라미수 스타일 디저트입니다. 레이디핑거를 깔루아 에스프레소에 적시고 마스카포네 치즈 크림으로 감쌌습니다.']
+]],['For Children of All Ages (어린이 메뉴)',[
+['Macaroni & Cheese','마카로니 앤 치즈','',''],
+['Golden Chicken Strips with Barbecue Sauce','골든 치킨 스트립','',''],
+['Mini Burger','미니 버거','',''],
+['Grilled Chicken Breast','그릴 치킨 가슴살','with Roasted Red Skin Potatoes and Steamed Carrots / 로스트 레드스킨 감자, 찐 당근','그릴에 구운 닭가슴살에 껍질째 구운 빨간 감자와 찐 당근을 곁들였습니다.'],
+['Dessert: Apple-Cinnamon Pie','디저트: 애플-시나몬 파이','Caramel Sauce, Vanilla Ice Cream / 카라멜 소스, 바닐라 아이스크림','사과와 시나몬을 채운 미국식 파이입니다. 카라멜 소스와 바닐라 아이스크림을 곁들였습니다.'],
+['Dessert: Fresh Watermelon','디저트: 신선한 수박','','']
+]]];
+
 const empty=[['메뉴 준비 중',[]]];
 function itemHtml(x){return `<article class="menu-item"><strong>${x[0]}</strong><b>${x[1]}</b>${x[2]?`<em>${x[2]}</em>`:''}${x[3]?`<p>${x[3]}</p>`:''}</article>`}
 function groupsHtml(groups){return groups.map(g=>`<section class="menu-group"><h3>${g[0]}</h3>${g[1].map(itemHtml).join('')}</section>`).join('')+'<button class="bottom-close" onclick="closeMenu()">메뉴 닫기</button>'}
 function show(groups,title,subtitle,icon){menuTitle.textContent=title;menuSubtitle.textContent=subtitle;mealIcon.textContent=icon;menuContent.innerHTML=groupsHtml(groups);menuPopup.classList.add('show');document.body.style.overflow='hidden'}
 function openMenu(type){show(type==='breakfast'?breakfastGroups:lunchGroups,type==='breakfast'?'조식 Table Service 메뉴':'중식 Table Service 메뉴','Animator’s Table · Navigator’s Club',type==='breakfast'?'🌅':'🌞')}
+
+
+
+function openRoomMenu(type){
+const map={
+breakfast:[roomBreakfast,'조식 신청 · 조식 메뉴'],
+allDay:[roomService24h,'24시간 룸서비스 (서비스 요금 약 $5.9) · 룸서비스 메뉴']
+};
+const entry=map[type];
+if(entry)show(entry[0],entry[1],'룸서비스','🍽️');
+}
+
+function openQuickMenu(type){
+const map={
+pizza:[quickPizzaPlanet,'Pizza Planet · 메뉴'],
+gramma:[quickGrammaTala,"Gramma Tala's Kitchen · 메뉴"],
+mowgli:[quickMowgli,"Mowgli's Eatery · 메뉴"],
+stitch:[quickStitch,"Stitch's 'Ohana Grill · 메뉴"],
+cosmic:[quickCosmic,'Cosmic Kebabs · 메뉴']
+};
+const entry=map[type];
+if(entry)show(entry[0],entry[1],'퀵 서비스 다이닝','🍴');
+}
+
+function openConciergeMenu(type){
+const map={
+breakfast:[conciergeBreakfast,'Concierge Lounge Breakfast · 메뉴'],
+lunch:[conciergeLunch,'Concierge Lounge Lunch · 메뉴'],
+sundeck:[conciergeSundeck,'Concierge Sundeck · 메뉴'],
+hollywood:[conciergeHollywood,'Hollywood Spotlight Club (Day 1 only) · 메뉴']
+};
+const entry=map[type];
+if(entry)show(entry[0],entry[1],'컨시어지 다이닝','🍽️');
+}
+
 function openDinnerMenu(pair,kind){
 let groups=empty;
 if(pair==='pairA')groups=kind==='kids'?pairAKids:pairAMain;
